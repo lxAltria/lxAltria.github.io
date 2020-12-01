@@ -1,1 +1,3 @@
-source for Xin's homepage
+---
+permalink: /index.html
+---
