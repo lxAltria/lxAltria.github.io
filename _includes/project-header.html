@@ -1,0 +1,38 @@
+{%- comment -%}
+Heading, award facts and description for a project page.
+Usage: {% include project-header.html proj=p %}
+{%- endcomment -%}
+{%- assign p = include.proj -%}
+      <div><hr></div>
+      <div class="starter-template">
+        <h2><img src="{{ '/img/nsf.png' | relative_url }}" class="float-left" style="height:30px;margin-right:30px" alt="{{ p.sponsor }}">{{ p.title }}</h2>
+      </div>
+      <div><hr></div>
+      <div class="starter-template">
+        <ul class="glyphicon glyphicon-list-alt">
+          {%- if p.award_id %}
+          <li><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID={{ p.award_id }}">NSF OAC-{{ p.award_id }}</a>
+            {%- if p.prior_award_id %} (transferred from <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID={{ p.prior_award_id }}">NSF OAC-{{ p.prior_award_id }}</a>){% endif %}</li>
+          {%- endif %}
+          {%- if p.start %}
+          {%- assign s = p.start | split: "-" -%}{%- assign e = p.end | split: "-" -%}
+          <li>Period: {{ s[1] }}/{{ s[0] }}{% if p.end %} -- {{ e[1] }}/{{ e[0] }}{% endif %}</li>
+          {%- endif %}
+          {%- if p.role %}
+          <li>Role: {{ p.role }}{% if p.lead_pi and p.lead_pi != "Xin Liang" %} (Lead PI: {{ p.lead_pi }}){% endif %}</li>
+          {%- endif %}
+          {%- if p.participants %}
+          <li>Participants: {{ p.participants | join: ", " }}</li>
+          {%- endif %}
+        </ul>
+      </div>
+      <div><hr></div>
+      <div class="starter-template">
+        <h2>Project description</h2>
+        <div><hr></div>
+        {%- if p.image %}
+        <img src="{{ p.image | relative_url }}" class="float-right" style="height:200px;margin-left:30px;margin-bottom:10px" alt="{{ p.title }}">
+        {%- endif %}
+        {%- comment -%}Same text as the entry in the research.html project list.{%- endcomment -%}
+        <p>{{ p.description }}</p>
+      </div>

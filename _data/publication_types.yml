@@ -1,0 +1,8 @@
+# Section order and headings for the publication list. The `key` matches the
+# `type:` field in publications.yml. Reorder or rename here, not in templates.
+- key: conference
+  label: "Refereed Conference Publications"
+- key: journal
+  label: "Refereed Journal Publications"
+- key: preprint
+  label: "Preprints"

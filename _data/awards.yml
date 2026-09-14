@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# Awards and travel grants -- generated from the previous awards.html.
+# Kept separate from news.yml on purpose: several of these (fellowships,
+# dissertation awards) were never news items.
+#   category: honor | travel
+# ---------------------------------------------------------------------------
+
+- title: "Pigman College of Engineering Excellence in Research Award, Stanley and Karen Pigman Colledge of Engineering, University of Kentucky"
+  year: 2025
+  category: honor
+
+- title: "Best Paper Award, IPDPS"
+  year: 2025
+  category: honor
+
+- title: "CAREER Award, NSF"
+  year: 2025
+  category: honor
+
+- title: "2023 Best Paper Award from IEEE Transactions on Big Data, IEEE Computer Society Publications Board"
+  year: 2024
+  category: honor
+
+- title: "IEEE-CS Technical Community on High Performance Computing (TCHPC) Early Career Researchers Award for Excellence in High Performance Computing, IEEE TCHPC"
+  year: 2024
+  category: honor
+
+- title: "EPSCoR Research Fellows, NSF"
+  year: 2023
+  category: honor
+
+- title: "Best Paper Finalists, ACM ICS"
+  year: 2023
+  category: honor
+
+- title: "CISE Research Initiation Initiative (CRII) Award, NSF"
+  year: 2022
+  category: honor
+
+- title: "2021 R&D 100 Award (SZ compression framework), R&D World"
+  year: 2021
+  category: honor
+
+- title: "Best Paper Award, IEEE Cluster"
+  year: 2018
+  category: honor
+
+- title: "Dissertation Year Program Fellowship, University of California, Riverside"
+  year: 2018
+  category: honor
+
+- title: "Dean's Distinguished Fellowship, University of California, Riverside"
+  year: 2014
+  category: honor
+
+- title: "Student Travel Grant, IEEE Big Data"
+  year: 2018
+  category: travel
+
+- title: "Student Travel Grant, IEEE Cluster"
+  year: 2018
+  category: travel
+
+- title: "Student Travel Grant, IEEE/ACM SC"
+  year: 2016
+  category: travel
+
+- title: "Student Travel Grant, IEEE/ACM SC"
+  year: 2015
+  category: travel

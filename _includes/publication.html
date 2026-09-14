@@ -1,0 +1,29 @@
+{%- comment -%}
+Renders one publication row, matching the existing research.html layout.
+Usage: {% include publication.html pub=some_publication %}
+{%- endcomment -%}
+{%- assign p = include.pub -%}
+<div class="row">
+  <div class="col-md-2">
+    <h6>{{ p.series }}</h6>
+  </div>
+  <div class="col-md-10">
+    <p>
+      {% include pub-authors.html pub=p %}.<br>
+      {{ p.title }}{% if p.award %} (<b>{{ p.award }}</b>){% endif %}.<br>
+      <i>{{ p.venue }}{% if p.location %}, {{ p.location }}{% endif %}, {% if p.dates %}{{ p.dates }}{% else %}{{ p.date | date: "%B %Y" }}{% endif %}.{% if p.acceptance %} Acceptance Rate: {{ p.acceptance }}.{% endif %}</i>
+      {%- if p.co_first %} (+: Co-first authors){% endif -%}
+      {%- if p.corresponding %} (*: Corresponding author){% endif -%}
+      {%- assign L = p.links -%}
+      {%- capture chips -%}
+        {%- if L.doi and L.doi != "" %}<a href="https://doi.org/{{ L.doi }}">[DOI]</a> {% endif -%}
+        {%- if L.arxiv and L.arxiv != "" %}<a href="https://arxiv.org/abs/{{ L.arxiv }}">[arXiv]</a> {% endif -%}
+        {%- if L.pdf and L.pdf != "" %}<a href="{{ L.pdf }}">[PDF]</a> {% endif -%}
+        {%- if L.code and L.code != "" %}<a href="{{ L.code }}">[Code]</a> {% endif -%}
+        {%- if L.slides and L.slides != "" %}<a href="{{ L.slides }}">[Slides]</a> {% endif -%}
+      {%- endcapture -%}
+      {%- assign chips = chips | strip -%}
+      {%- if chips != "" %} {{ chips }}{% endif %}
+    </p>
+  </div>
+</div>

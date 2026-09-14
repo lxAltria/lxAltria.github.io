@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /projects/prodm.html
+title: "NSF ProDM: Progressive Data Management — Xin Liang"
+description: "NSF Elements ProDM: Developing a Unified Progressive Data Management Library for Exascale Computational Science, led by Xin Liang."
+---
+{%- assign proj = site.data.projects | where: "id", "elements-prodm-developing-unified" | first -%}
+<main role="main" class="container">
+{% include project-header.html proj=proj %}
+      {%- comment -%}`push` is a Jekyll 4 filter; GitHub Pages runs Jekyll 3.10,
+      so count first, then loop again -- no array building.{%- endcomment -%}
+      {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+      {%- assign n = 0 -%}
+      {%- for p in pubs %}{% if p.projects contains "prodm" %}{% assign n = n | plus: 1 %}{% endif %}{% endfor -%}
+      {%- if n > 0 %}
+      <div><hr></div>
+      <div class="starter-template">
+        <h2>Publications</h2>
+        <div><hr></div>
+        {%- for p in pubs %}{% if p.projects contains "prodm" %}{% include publication.html pub=p %}{% endif %}{% endfor %}
+      </div>
+      {%- endif %}
+      <div><hr></div>
+</main>

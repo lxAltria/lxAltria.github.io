@@ -1,0 +1,80 @@
+# ---------------------------------------------------------------------------
+# People -- drives author formatting in publications AND the Group page.
+#
+# `name` MUST match the spelling used in _data/publications.yml `authors`
+# exactly. That match is what makes "bold me, underline my students"
+# automatic instead of hand-typed <b>/<u> tags.
+#
+#   role     pi | postdoc | phd | ms | undergrad | highschool
+#   status   current | alumnus
+#   advisor  xin   (set on everyone you advise; drives the underline)
+#   since / until / next   for the Group page
+#   bio      inline HTML allowed; carried over verbatim from group.html
+#   photo    path under img/
+# ---------------------------------------------------------------------------
+
+- name: "Xin Liang"
+  role: pi
+  status: current
+  photo: "/img/me.jpg"
+  bio: "Dr. Xin Liang is a tenure-track associate professor with the School of Electrical Engineering and Computer Science at Oregon State University. He received his Ph.D. in Computer Science from University of California, Riverside in 2019. Prior to that, he received his B.S. in Computer Science from Peking University in 2014, with a minor in Math and Applied Math. Prior to joining Oregon State University, he worked as an assistant professor at University of Kentucky and Missouri University of Science and Technology, and a Computer/Data Scientist in the Workflow Systems Group at Oak Ridge National Laboratory (ORNL). Contact him at <a href=\"mailto:xin.liang@oregonstate.edu\">xin.liang@oregonstate.edu</a>."
+
+- name: "Mingze Xia"
+  role: phd
+  status: current
+  advisor: xin
+  since: 2022
+  url: "https://xty9501.github.io/"
+  photo: "/img/Mingze.jpg"
+  bio: "Mr. Mingze Xia joined Polaris Lab in Fall 2022. He received his B.Math(Hons) in Statistics from the University of Waterloo in 2017 and Master’s degree in Data Science from The University of Melbourne in 2019. Previously, he worked at Duke Kunshan University as an Research Fellow and Huawei from 2020 to 2022 as a Data Scientist. His research interests focus on lossy compression, deep learning, and data mining. Contact him at <a href=\"mailto:xiami@oregonstate.edu\">xiami@oregonstate.edu</a>."
+
+- name: "Xuan Wu"
+  role: phd
+  status: current
+  advisor: xin
+  since: 2023
+  url: "https://scholar.google.com/citations?user=fw4Hx2QAAAAJ&hl=en"
+  photo: "/img/xuan.jpg"
+  bio: "Ms. Xuan Wu received her bachelor’s degree in Statistics from Wuhan University in 2022. Xuan joined Polaris lab in Fall 2023. Previously, she worked on developing computational algorithms in the field of statistical genetics. Her research interests include high-performance computing and scientific data compression. Contact her at <a href=\"mailto:wuxuan@oregonstate.edu\">wuxuan@oregonstate.edu</a>."
+
+- name: "Wenbo Li"
+  role: phd
+  status: current
+  advisor: xin
+  since: 2024
+  url: "https://scholar.google.com/citations?user=SVYA5dsAAAAJ&hl=en"
+  photo: "/img/wenbo.JPEG"
+  bio: "Mr. Wenbo Li received his bachelor’s degree in Bioinformatics from Huazhong University of Science and Technology in 2024. Wenbo joined Polaris lab in Fall 2024. Previously, he worked on proteomics and protein language models for the prediction of post-translation modifications. His research interests include high-performance computing, GPU computing, and scientific data compression. Contact him at <a href=\"mailto:liwenb@oregonstate.edu\">liwenb@oregonstate.edu</a>."
+
+- name: "Shitao You"
+  role: phd
+  status: current
+  advisor: xin
+  since: 2026
+  # photo and bio pending
+
+- name: "Linze Li"
+  role: phd
+  status: current
+  advisor: xin
+  since: 2026
+  # photo and bio pending
+
+- name: "Pu Jiao"
+  role: phd
+  status: alumnus
+  advisor: xin
+  since: 2021
+  until: 2025
+  next: "Assistant Professor, University of Texas Rio Grande Valley"
+  photo: "/img/Pu.jpeg"
+  bio: "Mr. Pu Jiao earned a master’s degree from the Institute of Engineering Mechanics of China Earthquake Administration in 2019 and a bachelor’s degree from Xi’an Jiaotong University in 2016. Pu joined Polaris Lab in Spring 2022, and he is currently working on improving the compression quality of scientific lossy data compressors. His research interest includes high-performance computing and data mining. Contact him at <a href=\"mailto:pujiao@uky.edu\">pujiao@uky.edu</a>."
+
+- name: "Jiannan Tian"
+  role: postdoc
+  status: alumnus
+  advisor: xin
+  since: 2024
+  until: 2025
+  next: "Assistant Professor, Oakland University"
+  # photo and bio pending

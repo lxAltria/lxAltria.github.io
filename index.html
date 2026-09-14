@@ -1,55 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Xin's Homepage</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
-
-    <!-- Bootstrap core CSS -->
-<link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
-  </head>
-  <body>
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal"><img src="uk-lockup.png" width="100" fill="none" alt="University of Kentucky" href="https://www.uky.edu"/></h5>
-  <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark d-md-inline-block" href="index.html">Home</a>
-    <a class="p-2 text-dark d-md-inline-block" href="research.html">Research</a>
-    <a class="p-2 text-dark d-md-inline-block" href="group.html">Group</a>
-    <a class="p-2 text-dark d-md-inline-block" href="teaching.html">Teaching</a>
-    <a class="p-2 text-dark d-md-inline-block" href="awards.html">Awards</a>
-    <a class="p-2 text-dark d-md-inline-block" href="services.html">Services</a>
-    <!-- <a class="p-2 text-dark d-md-inline-block" href="#">Group</a> -->
-  </nav>
-</div>
-    <div class="view" style="background-image: url('hpc.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+---
+layout: default
+permalink: /
+title: "Xin Liang — Associate Professor, Oregon State University"
+description: "Xin Liang is an Associate Professor in the School of Electrical Engineering and Computer Science at Oregon State University, working on high-performance computing, scientific data management and reduction, and large-scale data analytics."
+---
+    <div class="view" style="background-image: url('/img/hpc.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div align="center" style="color:white">
           <br/>
           <h2> Xin Liang</h2>
@@ -67,108 +22,39 @@
     </div>
 
 <main role="main" class="container">
-  <!-- <div class="jumbotron"> -->
+
       <div><hr></div>
       <div class="row">
         <div class="col">
-            <img src="img/me.jpg" class="float-right" style="height:300px;margin-right:10px">
+          {%- assign me = site.data.people | where: "role", "pi" | first %}
           <h2 align="left"> Biography</h2>
+          <div><hr></div>
+          <img src="{{ me.photo | relative_url }}" class="float-right" style="height:300px;margin-right:10px" alt="Xin Liang">
           <p align="left">Dr. Xin Liang is a tenure-track associate professor with the <a href="https://engineering.oregonstate.edu/EECS">School of Electrical Engineering and Computer Science</a> at <a href="https://oregonstate.edu/">Oregon State University</a>. He received his Ph.D. in Computer Science from <a href="https://www.ucr.edu">University of California, Riverside</a> in 2019. Prior to that, he received his B.S. in Computer Science from <a href="https://www.pku.edu.cn">Peking University</a> in 2014, with a minor in Math and Applied Math. During his Ph.D. studies, he worked as student interns in the Extreme Scale Resilience Group and the Parallel Extreme-Scale Data Analytics Team at <a href="https://www.anl.gov/">Argonne National Laboratory (ANL)</a>, the Scalable Machine Learning Group at <a href="https://www.pnnl.gov/">Pacific Northwest National Laboratory (PNNL)</a>, and the Data Science at Scale Team at <a href="http://www.lanl.gov/">Los Alamos National Laboratory (LANL)</a>. Prior to joining Oregon State University, he worked as an assistant professor at <a href="https://www.uky.edu">University of Kentucky</a> and <a href="https://www.mst.edu">Missouri University of Science and Technology</a>, and Computer/Data Scientist in the Workflow Systems Group at <a href="https://www.ornl.gov">Oak Ridge National Laboratory (ORNL)</a>.</p>
-          <p align="left">Dr. Liang's research interests lie broadly in the areas of high-performance computing, parallel and distributed systems, scientific data management, large-scale data analytics, and distributed machine learning. He has published in many highly competitive conferences and journals such as IEEE/ACM SC, ACM HPDC, ACM PPoPP, ACM ICS, IEEE IPDPS, ACM PACT, IEEE BigData, IEEE Cluster, IEEE TPDS etc. He has received a <I>Dissertation Year Fellowship (DYP)</I> from UCR, two <I>Best Paper Awards</I> from IEEE Cluster, one <I>Best Paper Finalist</I> from ACM ICS, one <I>Best Paper Award</I> from IEEE IPDPS, one <I>Best Paper Award</I> from IEEE TBD, a <I>CRII Award</I> from the NSF, an <I>EPSCoR Fellowship</I> from the NSF, and a <I>CAREER Award</I> from the NSF. He has also received the <I>IEEE CS TCHPC Early Career Researchers Award For Excellence in High Performance Computing</I> in 2024. While working at ORNL, he led the ESAMR project funded by the <I>Director's Research and Development (DRD)</I> program as principal investigator. He is one of the key developers of SZ and major contributors of MGARD, which are two widely used data reduction software in the scientific computing community. More details about Dr. Liang can be found in his <a href="cv.pdf" target="_blank" data-content="cv.pdf" data-type="external" rel="undefined">CV</a></span>.</p>
+          <p align="left">Dr. Liang's research interests lie broadly in the areas of high-performance computing, parallel and distributed systems, scientific data management, large-scale data analytics, and distributed machine learning. He has published in many highly competitive conferences and journals such as IEEE/ACM SC, ACM HPDC, ACM PPoPP, ACM ICS, IEEE IPDPS, ACM PACT, IEEE BigData, IEEE Cluster, IEEE TPDS etc. He has received a <I>Dissertation Year Fellowship (DYP)</I> from UCR, two <I>Best Paper Awards</I> from IEEE Cluster, one <I>Best Paper Finalist</I> from ACM ICS, one <I>Best Paper Award</I> from IEEE IPDPS, one <I>Best Paper Award</I> from IEEE TBD, a <I>CRII Award</I> from the NSF, an <I>EPSCoR Fellowship</I> from the NSF, and a <I>CAREER Award</I> from the NSF. He has also received the <I>IEEE CS TCHPC Early Career Researchers Award For Excellence in High Performance Computing</I> in 2024. While working at ORNL, he led the ESAMR project funded by the <I>Director's Research and Development (DRD)</I> program as principal investigator. He is one of the key developers of SZ and major contributors of MGARD, which are two widely used data reduction software in the scientific computing community. More details about Dr. Liang can be found in his <a href="{{ '/docs/cv.pdf' | relative_url }}" target="_blank" data-content="cv.pdf" data-type="external" rel="undefined">CV</a></span>.</p>
 
           <p align="left"><b>Dr. Liang is always looking for self-motivated students to work on high-performance computing, scientific data management, and big data analytics. If you're interested in his research, please contact him at <a href="mailto:xin.liang@oregonstate.edu">xin.liang@oregonstate.edu</a>. 
           According to <a href="https://csrankings.org">CS ranking</a>, Oregon State University is ranked <a href="https://csrankings.org/#/index?hpc&us">13th</a> among all the US universities in the area of high-performance computing.
           </b></p>
         </div>
       </div>
-
       <div><hr></div>
       <div class="starter-template">
         <h2>Latest News</h2>
-        <ul class="glyphicon glyphicon-list-alt">
-          <li>09/2026: Xuan has received the <b>ACM-IEEE CS George Michael Memorial HPC Fellowships</b> that honors exceptional graduate students (up to three awardee and one honorable mention worldwide) in high performance computing, networking, storage, and large-scale data analysis. This is great achievement and recognition from the community. Big congratulations to Xuan! [<a href="https://awards.acm.org/hpc-fellows">Announcement</a>]
-          <li>09/2026: Shitao and Linze joined our team as PhD students. Both of them have received the <b>OSU College of Engineering scholarship</b> ($10K for one year). Congratulations and welcome, Shitao and Linze!</li>
-          <li>08/2026: One paper has been accepted by CIKM'26.</li>
-          <li>07/2026: Three papers have been accepted by VIS'26.</li>
-          <li>07/2026: Two papers have been accepted by SC'26. Congratulations to Wenbo!</li>
-          <li>04/2026: Pu has accepted an offer from University of Texas Rio Grand Valley and will start as a tenure-track Assistant Professor there on August. Congratulations to Prof. Pu!</li>
-          <li>04/2026: Pu has successfully defended his PhD. Congratulations to Dr. Pu!</li>
-          <li>04/2026: One paper has been accepted by TVCG.</li>
-          <li>03/2026: One paper has been accepted by HPDC'26. Congratulations to Wenbo!</li>
-          <li>02/2026: Two papers have been accepted by ICDE'26. Congratulations to Mingze and Xuan!</li>
-          <li>12/2025: Two papers have been accepted by IPDPS'26. Congratulations to Pu!</li>
-          <li>07/2025: One paper has been accepted by VIS'25.</li>
-          <li>07/2025: Jiannan has accepted an offer from Oakland University and will start as a tenure-track Assistant Professor there on August. Congratulations to Prof. Tian!</li>
-          <li>06/2025: Four papers have been accepted by SC'25. Congratulations to Wenbo on his co-first author paper!</li>
-          <li>06/2025: Jiannan's <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2514035&HistoricalAwards=false">CSSI project</a> has been awarded by the National Science Foundation (his role: site PI, in collaborations with the University of Houston and the University of Chicago). Congratulations to Jiannan!</li>
-          <li>06/2025: Xuan's paper on unstructured scientific data compression has been selected as the <b>Best Paper Award</b> in IPDPS'25. Congratulations to Xuan and the team!</li>
-          <li>04/2025: One paper has been accepted at VLDB'25. Congratulations to Pu!</li>
-          <li>04/2025: I am very honored to receive the <b>Pigman College of Engineering Excellence in Research Award</b> (one out of all Assistant Professors in the Stanley and Karen Pigman Colledge of Engineering at the University of Kentucky). Thanks a lot for the recognition from the college!</li>
-          <li>04/2025: Our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2504255&HistoricalAwards=false">OAC Core project</a> has been awarded by the National Science Foundation (my role: site PI, in collaborations with the University of Illinois, Urbana-Champaign). This project aims to design a learning-driven framework to mitigate artifacts in scientific lossy data compressors. Thanks a lot to the NSF!</li>
-          <li>03/2025: One paper has been accepted at ICDE'25. Congratulations to Mingze!</li>
-          <li>01/2025: Xuan's paper on unstructured scientific data compression has been nominated for the <b>Best Paper Award</b> in IPDPS'25. Congratulations to Xuan and the team!</li>
-          <li>01/2025: One paper has been accepted at PacificVis'25 (TVCG journal track).</li>
-<!--           <li>12/2024: Three papers have been accepted in IPDPS'25. Congratulations to Xuan and Pu!</li>
-          <li>12/2024: My <a href=https://www.nsf.gov/awardsearch/showAward?AWD_ID=2442627&HistoricalAwards=false>CAREER project</a> has been awarded by the National Science Foundation! This project aims to reduce the data movement time for scientific applications by enabling adaptable data retrieval with error control. Thanks a lot to the NSF!</li>
-          <li>12/2024: Our paper on the <a href="https://ieeexplore.ieee.org/abstract/document/9866018">SZ3 lossy compression framework</a> has been selected as the <a href="https://www.computer.org/publications/best-paper-award-winners">2023 Best Paper Award from IEEE Transactions on Big Data</a> by the IEEE Computer Society Publications Board. Congratulations to the team!</li>
-          <li>11/2024: I am very honored to receive the <b>2024 IEEE CS TCHPC Early Career Researchers Award For Excellence in High Performance Computing</b>. Thanks a lot for the recognition from the community! [<a href="https://tc.computer.org/tchpc/2024/09/16/2024-ieee-cs-tchpc-award-winners/">Announcement</a>] [<a href="https://www.ccs.uky.edu/2024-ieee-cs-tchpc-award-winner-dr-xin-liang-computer-science-university-of-kentucky/">UK CCS News</a>]</li>
-          <li>11/2024: One paper has been accepted at SIGMOD'25.</li>
-          <li>10/2024: Dr. Jiannan Tian joined our team as a postdoc researcher. Welcome Jiannan!</li>
-          <li>09/2024: We received a renewal of our subcontract from Argonne National Laboratory to continue the investigation of feature regeneration in lossy compressors. Thanks a lot to ANL!</li>
-          <li>08/2024: Wenbo Li joined our team as a PhD student. Welcome Wenbo!</li>
-          <li>07/2024: One paper has been accepted in VIS'24.</li>
-          <li>06/2024: Two papers have been accepted in SC'24. Congratulations to Xuan on getting her first SC paper accepted!</li>
-          <li>03/2024: One paper has been accepted in EuroVis'24.</li>
-          <li>01/2024: One paper has been accepted in IPDPS'24.</li>
-          <li>12/2023: One paper has been accepted in ICDE'24. Congratulations to Mingze!</li>
-          <li>11/2023: Dr. Liang has been recommended as EPSCoR Research Fellows for our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2327266&HistoricalAwards=false">RII Track-4 project</a> awarded by the National Science Foundation (my role: PI). This project aims to improve the performance of MPI on exascale systems with adaptive lossy compression methods. Thanks a lot to the NSF!</li>
-          <li>11/2023: One paper has been accepted in SIGMOD'24.</li>
-          <li>09/2023: One paper has been accepted in HiPC'23. Congratulations to Pu!</li>
-          <li>08/2023: Our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313122&HistoricalAwards=false">OAC Core project</a> has been awarded by the National Science Foundation (my role: lead PI, in collaborations with the University of Utah and the Ohio State University). This project aims to design topology-aware compressors for scientific applications. Thanks a lot to the NSF!</li>
-          <li>08/2023: Xuan Wu joined our team as a PhD student. Welcome Xuan!</li>          
-          <li>06/2023: One paper has been accepted in VIS'23.</li>
-          <li>06/2023: Our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2311756&HistoricalAwards=false">CSSI project</a> has been awarded by the National Science Foundation (my role: lead PI, in collaborations with New Jersey Institute of Technology and Temple University). This project aims to develop progressive data management middleware to advance exascale science. Thanks a lot to the NSF!</li>
-          <li>05/2023: One paper has been accepted in ICS'23 and nominated in the <b>Best Paper Finalists</b>!</li>
-          <li>04/2023: Two papers have been accepted in HPDC'23.</li>
-          <li>02/2023: One paper has been accepted in ICDE'23.</li>
-          <li>01/2023: Mikhail Kovalev and Andrew Chen from Paul Laurence Dunbar High School joined our team to complete their capstone research project. Welcome Mikhail and Andrew!</li>
-          <li>11/2022: One paper has been accepted in VLDB'23. Congratulations to Pu!</li>
-          <li>11/2022: One paper has been accepted in PPoPP'23.</li>
-          <li>11/2022: Attended the Turing lecture by Dr. Jack Dongarra at SC'22. Dr. Dongarra received <a href="https://awards.acm.org/about/2021-turing">the 2021 ACM A.M. Turing Award</a> for pioneering contributions to numerical algorithms and libraries that enabled high performance computational software. [<a href="https://www.youtube.com/watch?v=cSO0Tc2w5Dg">video</a>]</li>
-          <li>10/2022: We received a subcontract from Argonne National Laboratory to investigate feature regeneration in lossy compressors. Thanks a lot to ANL!</li>
-          <li>10/2022: One paper has been accepted in IEEE Transactions on Visualization and Computer Graphics.</li>
-          <li>08/2022: Mingze Xia joined our team as a PhD student. Welcome Mingze!</li>
-          <li>08/2022: Our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330364">CyberTraining project</a> has been awarded by the National Science Foundation (my role: site PI, in collaboration with University of North Texas, Southern Illinois University Carbondale, and Missouri University of Science and Technology). This project aims to host training workshops to develop workforce for deep learning with GPU-based systems. Thanks a lot to the NSF!</li>
-          <li>08/2022: One paper has been accepted in IEEE Transactions on Big Data.</li>
-          <li>06/2022: One paper has been accepted in SC'22.</li>
-          <li>05/2022: One paper has been accepted in SSDBM'22.</li>
-          <li>04/2022: One paper has been accepted in HPDC'22.</li>
-          <li>02/2022: Our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330367">CRII project</a> has been awarded by the National Science Foundation (my role: PI). This project aims to enable the preservation of quantities of interest in scientific lossy compressors. Thanks a lot to the NSF!</li>
-          <li>01/2022: Pu Jiao joined our team as a PhD student. Welcome Pu!</li> -->
-<!-- 
-          <li>11/2021: One paper has been accepted in ICDE'22.</li>
-          <li>11/2021: I am serving as a Guest Editor of the special issue <a href="https://www.mdpi.com/journal/electronics/special_issues/new_trends_HPC">"New Trends for High-Performance Computing"</a> in <a href="https://www.mdpi.com/journal/electronics">Electronics</a>. Please consider making a submission!</li>
-          <li>10/2021: Our <a href="https://szcompressor.org">SZ compression software</a> has been selected for <a href="https://www.rdworldonline.com/rd-100-2021-winner/sz-a-lossy-compression-framework-for-scientific-data/">2021 R&D100 Awards</a>! </li>
-          <li>08/2021: Two papers have been accepted in Cluster'21.</li>
-          <li>07/2021: One paper has been accepted in TPDS-SS-Innovative R&D toward the Exascale Era.</li>
-          <li>06/2021: Two papers have been accepted in SC'21.</li>
-          <li>05/2021: One paper has been accepted in IEEE Transactions on Computers.</li>
-          <li>12/2020: Two papers have been accepted in IPDPS'21.</li>
-          <li>10/2020: Our LDRD project (my role: PI) was funded by ORNL.</li>
-          <li>09/2020: Our Sirius-2 project (my role: Senior Personnel) was funded by DOE ASCR.</li>
-          <li>09/2020: Our RADIDS-2 project (my role: Senior Personnel) was funded by DOE ASCR.</li>
-          <li>09/2020: One paper has been accepted in TPDS-SS-AI.</li>
-          <li>08/2020: One paper has been accepted in Cluster'20.</li>
-          <li>07/2020: One paper has been accepted in PACT'20.</li>
-          <li>03/2020: One paper has been accepted in HPDC'20.</li>
-          <li>01/2020: One paper has been accepted in PacificVis'20.</li>
- -->          
+        <div><hr></div>
+        <ul>
+          {%- assign news = site.data.news | sort: "date" | reverse -%}
+          {%- for item in news limit: site.news_on_home %}
+          <li><b>{{ item.date | date: "%m/%Y" }}:</b> {{ item.text }}</li>
+          {%- endfor %}
         </ul>
+        <p><a href="{{ '/news.html' | relative_url }}">Full news archive &rarr;</a></p>
       </div>
 
       <div><hr></div>
       <div class="starter-template">
         <h2>Research Interests</h2>
+        <div><hr></div>
         <ul class="glyphicon glyphicon-list-alt">
           <li>Parallel, distributed, and heterogeneous systems.</li>
           <li>Data management, reduction, refactoring, and streaming.</li>
@@ -179,342 +65,27 @@
           <li>Linear algebra and numerical algorithms.</li>
         </ul>
       </div>
-
       <div><hr></div>
       <div class="starter-template">
         <h2>Education</h2>
+        <div><hr></div>
         <ul class="glyphicon glyphicon-list-alt">
           <li>Ph. D. in Computer Science, University of California, Riverside, 2014-2019.</li>
           <li>B. S. in Computer Science, Peking University, 2010-2014.</li>
           <li>Minor in Mathematics, Peking University, 2011-2014.</li>
         </ul>
       </div>
-
       <div><hr></div>
-
       <div class="starter-template">
-        <h2>Selected Publications (<a href="research.html#publication">Full List</a>, <a href="https://scholar.google.com/citations?user=QRj1QroAAAAJ&hl=en">Google Scholar</a>)</h2>
+        <h2>Selected Recent Papers (<a href="{{ '/research.html' | relative_url }}#publication">Full List</a>, <a href="https://scholar.google.com/citations?user=QRj1QroAAAAJ&hl=en">Google Scholar</a>)</h2>
+        <div><hr></div>
+        <p><i>My students are underlined.</i></p>
+        {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+        {%- for p in pubs %}
+          {%- assign yr = p.date | date: "%Y" | plus: 0 -%}
+          {%- if p.selected and yr >= site.selected_since %}{% include publication.html pub=p %}{% endif -%}
+        {%- endfor %}
+      </div>
 
-        <p><I>My students are underlined.</I></p>
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'26</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Wenbo Li</u>, <u>Xuan Wu</u>, Qian Gong, <u>Pu Jiao</u>, Jieyang Chen, Qing Liu, Norbert Podhorszki, Scott Klasky, and <b>Xin Liang</b>.<br>
-              Improving Progressive Compression with Adaptive Interpolation and Coefficient Decomposition.<br>
-              <I>Proceedings of the 39th ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, Chicago, IL, USA, Nov 15 - 20, 2026.</I><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>HPDC'26</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Wenbo Li</u>, Qian Gong, <u>Xuan Wu</u>, Jieyang Chen, Qing Liu, Xubin He, Norbert Podhorszki, Scott Klasky, and <b>Xin Liang</b>.<br>
-              QProR: An Efficient Framework for Quantity-of-Interest Based Progressive Retrieval with Guaranteed Error Control.<br>
-              <I>Proceedings of the 35th ACM International Symposium on High-Performance Parallel and Distributed Computing, Cleveland, OH, July 13 - 16, 2026.</I> <br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>ICDE'26</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Xuan Wu</u>, Sheng Di, Tripti Agarwal, Kai Zhao, <b>Xin Liang<sup>*</sup></b>, and Franck Cappello.<br>
-              Enabling Homomorphic Analytical Operations on Compressed Scientific Data with Multi-stage Decompression.<br>
-              <I>Proceedings of the 42nd IEEE International Conference on Data Engineering, Montreal, Canada, May 4 - 8, 2026.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>ICDE'26</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Mingze Xia</u>, Yuxiao Li, <u>Pu Jiao</u>, Bei Wang, <b>Xin Liang<sup>*</sup></b>, and Hanqi Guo.<br>
-              Time-varying Vector Field Compression with Preserved Critical Point Trajectories.<br>
-              <I>Proceedings of the 42nd IEEE International Conference on Data Engineering, Montreal, Canada, May 4 - 8, 2026.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>IPDPS'26</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Pu Jiao</u>, Sheng Di, <u>Jiannan Tian</u>, <u>Mingze Xia</u>, <u>Xuan Wu</u>, Yang Zhang, <b>Xin Liang<sup>*</sup></b>, Franck Cappello.<br>
-              Mitigating Artifacts in Pre-quantization Based Scientific Data Compressors with Quantization-aware Interpolation.<br>
-              <I>Proceedings of the 40th IEEE International Parallel & Distributed Processing Symposium, New Orlean, LA, May 25 - May 29, 2026.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'25</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              Yanliang Li<sup>+</sup>, <u>Wenbo Li<sup>+</sup></u>, Qian Gong, Qing Liu, Norbert Podhorszki, Scott Klasky, <b>Xin Liang</b>, and Jieyang Chen.<br>
-              HP-MDR: High-performance and Portable Data Refactoring and Progressive Retrieval with Advanced GPUs.<br>
-              <I>Proceedings of the 38th ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, St. Louis, MO, USA, Nov 16 - 21, 2025.</I> (+: Co-first authors)<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>VLDB'25</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              Jinyang Liu<sup>+</sup>, <u>Pu Jiao<sup>+</sup></u>, Kai Zhao, <b>Xin Liang<sup>*</sup></b>, Sheng Di, and Franck Cappello.<br>
-              QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression.<br>
-              <I>Proceedings of the 51st International Conference on Very Large Data Bases, London, United Kingdom, Sep 1 - Sep 5, 2025.</I> (+: Co-first authors, *: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>ICDE'25</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Mingze Xia</u>, Bei Wang, Yuxiao Li, <u>Pu Jiao</u>, <b>Xin Liang<sup>*</sup></b>, Hanqi Guo.<br>
-              TspSZ: An Efficient Parallel Error-Bounded Lossy Compressor for Topological Skeleton Preservation.<br>
-              <I>Proceedings of the 41st IEEE International Conference on Data Engineering, Hong Kong SAR, China, May 19 - 23, 2025.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>IPDPS'25</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Xuan Wu</u>, Sheng Di, Congrong Ren, <u>Pu Jiao</u>, <u>Mingze Xia</u>, Cheng Wang, Hanqi Guo, <b>Xin Liang<sup>*</sup></b>, Franck Cappello.<br>
-              Enabling Efficient Error-controlled Lossy Compression for Unstructured Scientific Data.<br>
-              <I>Proceedings of the 39th IEEE International Parallel & Distributed Processing Symposium, Milan, Italy, June 3 - June 7, 2025.</I> <b>Selected as the Best Paper Award.</b> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>IPDPS'25</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Pu Jiao</u>, Sheng Di, <u>Mingze Xia</u>, <u>Xuan Wu</u>, Jinyang Liu, <b>Xin Liang<sup>*</sup></b>, Franck Cappello.<br>
-              Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction.<br>
-              <I>Proceedings of the 39th IEEE International Parallel & Distributed Processing Symposium, Milan, Italy, June 3 - June 7, 2025.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'24</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Xuan Wu</u>, Qian Gong, Jieyang Chen, Qing Liu, Norbert Podhorszki, <b>Xin Liang<sup>*</sup></b>, and Scott Klasky.<br>
-              Error-controlled Progressive Retrieval of Scientific Data under Derivable Quantities of Interest.<br>
-              <I>Proceedings of the 36th ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, Atlanta, GA, USA, Nov 17 - 22, 2024.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>ICDE'24</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Mingze Xia</u>, Sheng Di, Franck Cappello, <u>Pu Jiao</u>, Kai Zhao, Jinyang Liu, <u>Xuan Wu</u>, <b>Xin Liang<sup>*</sup></b>, and Hanqi Guo.<br>
-              Preserving Topological Feature with Sign-of-Determinant Predicates in Lossy Compression: A Case Study of Vector Field Critical Points.<br>
-              <I>Proceedings of the 40th IEEE International Conference on Data Engineering, Utrecht, Netherlands, May 13 - 16, 2024.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>HiPC'23</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Pu Jiao</u>, Sheng Di, Jinyang Liu, <b>Xin Liang<sup>*</sup></b>, and Franck Cappello.<br>
-              Characterization and Detection of Artifacts for Error-controlled Lossy Compressors.<br>
-              <I>Proceedings of the 30th IEEE International Conference on High Performance Computing, Data, and Analytics, Goa, India, Dec 18 - Dec 21, 2023.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>VLDB'23</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <u>Pu Jiao</u>, Sheng Di, Hanqi Guo, Kai Zhao, Jiannan Tian, Dingwen Tao, <b>Xin Liang<sup>*</sup></b>, and Franck Cappello.<br>
-              Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data.<br>
-              <I>Proceedings of the 49th International Conference on Very Large Data Bases, Vancour, Canada, Aug 28 - Sep 1, 2023.</I> (*: Corresponding authors)<br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>TVCG</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Sheng Di, Franck Cappello, Mukund Raj, Chunhui Liu, Kenji Ono, Zizhong Chen, Tom Peterka, and Hanqi Guo.<br>
-              Toward Feature-Preserving Vector Field Compression.<br>
-              <I>IEEE Transactions on Visualization and Computer Graphics, 2022.</I> <br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>TBD</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang<sup>+</sup></b>, Kai Zhao<sup>+</sup>, Sheng Di, Sihuan Li, Robert Underwood, Ali M. Gok, Jiannan Tian, Junjing Deng, Jon C. Calhoun, Dingwen Tao, Zizhong Chen, and Franck Cappello.<br>
-              SZ3: A Modular Framework for Composing Prediction-based Error-bounded Lossy Compressors (<b>2023 Best Paper Award from IEEE Transactions on Big Data by the IEEE Computer Society Publications Board</b>).<br>
-              <I>IEEE Transactions on Big Data, 2022.</I> (+: Co-first authors)<br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'21</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Qian Gong, Jieyang Chen, Ben Whitney, Lipeng Wan, Qing Liu, David Pugmire, Rick Archibald, Norbert Podhorszki, and Scott Klasky.<br>
-              Error-controlled, Progressive, and Adaptable Retrieval of Scientific Data with Multilevel Decomposition.<br>
-              <I>Proceedings of the 33rd ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, St. Louis, Missouri, USA, Nov 14 - 19, 2021. Acceptance Rate: 23.6% (86/365)</I><br>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <h6>TC</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang<sup>+</sup></b>, Ben Whitney<sup>+</sup>, Jieyang Chen, Lipeng Wan, Qing Liu, Dingwen Tao, James Kress, David Pugmire, Matthew Wolf, Norbert Podhorszki, and Scott Klasky.<br>
-              MGARD+: Optimizing Multilevel Methods for Error-bounded Scientific Data Reduction.<br>
-              <I>IEEE Transactions on Computers, 2021.</I> (+: Co-first authors)<br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>PacificVis'20</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Hanqi Guo, Sheng Di, Franck Cappello, Mukund Raj, Chunhui Liu, Kenji Ono, Zizhong Chen and Tom Peterka.<br>
-              Towards Feature Preserving 2D and 3D Vector Field Compression.<br>
-              <I>Proceedings of the 13rd IEEE Pacific Visualization Symposium, Tianjin, China, Apr 14-17, 2020. Acceptance Rate: 24% (23/96)</I><br>
-            </p>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'19</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Sheng Di, Sihuan Li, Dingwen Tao, Bogdan Nicolae, Zizhong Chen, and Franck Cappello.<br>
-              Significantly Improving Lossy Compression Quality based on An Optimized Hybrid Prediction Model.<br>
-              <I>Proceedings of the 31st ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, Denver, Colorado, USA, Nov 17 - 22, 2019. Acceptance Rate: 20.9% (72/344)</I><br>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <h6>Cluster'19</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Sheng Di, Dingwen Tao, Sihuan Li, Bogdan Nicolae, Zizhong Chen, and Franck Cappello.<br>
-              Improving Performance of Data Dumping with Lossy Compression for Scientific Simulation.<br>
-              <I>Proceedings of the 2019 IEEE International Conference on Cluster Computing, Albuquerque, New Mexico USA, September 23 - 26, 2019. Acceptance Rate: 27.7% (39/141)</I><br>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <h6>Cluster'18</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Sheng Di, Dingwen Tao, Zizhong Chen, and Franck Cappello.<br>
-              An Efficient Transformation Scheme for Lossy Data Compression with Point-wise Relative Error Bound (<b>best paper award in Data, Storage, and Visualization Area</b>).<br>
-              <I>Proceedings of the 2018 IEEE International Conference on Cluster Computing, Belfast, UK, September 10 - 13, 2018. Less than 2.6% (4/154) of submissions are awarded best papers.</I><br>
-            </p>
-          </div>
-        </div>  
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>BigData'18</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Sheng Di, Dingwen Tao, Sihuan Li, Shaomeng Li, Hanqi Guo, Zizhong Chen, and Franck Cappello.<br>
-              Error-Controlled Lossy Compression Optimized for High Compression Ratios of Scientific Datasets.<br>
-              <I>Proceedings of the 2018 IEEE International Conference on Big Data, Seattle, WA, USA, December 10 - 13, 2018. Acceptance Rate: 18.9% (98/518)</I><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-2">
-            <h6>SC'17</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              <b>Xin Liang</b>, Jieyang Chen, Dingwen Tao, Sihuan Li, Panruo Wu, Hongbo Li, Kaiming Ouyang, Yuanlai Liu, Fengguang Song, and Zizhong Chen.<br>
-              Correcting Soft Errors Online in Fast Fourier Transform.<br>
-              <I>Proceedings of the 29th ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis, Denver, Colorado, USA, Nov 12 - 17, 2017. Acceptance Rate: 18.6% (61/327).</I> <br>
-            </p>
-          </div>
-        </div>
-<!--         <div class="row">
-          <div class="col-md-2">
-            <h6>IPDPS'16</h6>
-          </div>
-          <div class="col-md-10">
-            <p>
-              Jieyang Chen, <b>Xin Liang</b>, and Zizhong Chen.<br>
-              Online Algorithm-Based Fault Tolerance for Cholesky Decomposition on Heterogeneous Systems with GPUs.<br>
-              <I>Proceedings of the 30th IEEE International Parallel & Distributed Processing Symposium, Chicago, Illinois, USA, May 23-27, 2016. Acceptance Rate: 22.98% (114/496)</I><br>
-            </p>
-          </div>
-        </div>       -->
       <div><hr></div>
-  <!-- </div> -->
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
-</html>
-

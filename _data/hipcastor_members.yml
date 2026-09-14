@@ -1,0 +1,17 @@
+# Current HiPCastor members, used to COMPUTE which publications belong on the
+# group site. Mirrors hipcastor-site/_data/{faculty,phd_students,students}.yml.
+# This is the alternative to hand-maintaining `sites: [personal, group]` on
+# all 82 records: membership is derived, and `exclude_from: [group]` in
+# publications.yml is the escape hatch for the rare exception.
+- name: Wenqian Dong
+- name: Renato Figueiredo
+- name: Kyle Hale
+- name: Manish Motwani
+- name: Xin Liang
+- name: Mingze Xia
+- name: Xuan Wu
+- name: Wenbo Li
+- name: Nanda Velugoti
+- name: Shouwei Gao
+- name: Ninad Anklesaria
+- name: Ashish Ramrakhiani

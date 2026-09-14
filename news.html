@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /news.html
+title: "News Archive — Xin Liang"
+description: "Full news archive for Xin Liang and the Polaris Lab at Oregon State University."
+---
+<main role="main" class="container">
+      <div><hr></div>
+      <div class="starter-template">
+        <h2>News Archive</h2>
+        <div><hr></div>
+        {%- assign news = site.data.news | sort: "date" | reverse -%}
+        {%- assign by_year = news | group_by_exp: "n", "n.date | date: '%Y'" -%}
+        {%- for yr in by_year %}
+        <h4 class="lead">{{ yr.name }}</h4>
+        <ul>
+          {%- for item in yr.items %}
+          <li><b>{{ item.date | date: "%m/%Y" }}:</b> {{ item.text }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endfor %}
+      </div>
+      <div><hr></div>
+</main>

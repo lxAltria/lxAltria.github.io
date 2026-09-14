@@ -1,0 +1,94 @@
+# ---------------------------------------------------------------------------
+# Professional service -- from CV_xin/main.tex (\section{Services}) merged with
+# the entries that were already on services.html.
+#
+# Section order below is the order shown on the page.
+#
+# Every section renders as a bulleted list of full names, matching the
+# Journal Reviewer style. Venues are written out in full with the acronym in
+# parentheses; repeat service at one venue is grouped, so a venue appears once
+# with all its years rather than once per year.
+#
+#   label    section heading
+#   entries  list of {name, short, years} -- or {name, url} for a single item
+#            `short`  optional acronym, rendered as "Full Name (SHORT)"
+#            `years`  optional list; omit when the year is not recorded
+# ---------------------------------------------------------------------------
+
+- label: Organizing Committee
+  entries:
+    - name: International Workshop on Big Data Reduction
+      short: IWBDR
+      years: [2026, 2025, 2023, 2022]
+    - name: International Workshop on Data Reduction for Big Scientific Data
+      short: DRBSD
+      years: [2025, 2024, 2023, 2022]
+
+- label: Program Chair / Co-chair
+  entries:
+    - name: International Workshop on Data Reduction for Big Scientific Data
+      short: DRBSD
+      years: [2024]
+    - name: International Workshop on Big Data Reduction
+      short: IWBDR
+      years: [2023, 2022]
+
+- label: Program Committee
+  entries:
+    - name: IEEE International Parallel & Distributed Processing Symposium
+      short: IPDPS
+      years: [2026]
+    - name: IEEE International Conference on Big Data
+      short: BigData
+      years: [2026, 2025, 2024, 2023, 2022]
+    - name: IEEE International Conference on Data Mining
+      short: ICDM
+      years: [2026, 2025]
+    - name: IEEE International Conference on Distributed Computing Systems
+      short: ICDCS
+      years: [2026]
+    - name: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+      short: CCGrid
+      years: [2025, 2024]
+    - name: IEEE Cloud Summit
+      years: [2025]
+    - name: International Conference on Scientific and Statistical Database Management
+      short: SSDBM
+      years: [2024, 2023, 2022]
+    - name: International Workshop on Data Reduction for Big Scientific Data
+      short: DRBSD
+      years: [2023]
+    - name: International Conference on Parallel Processing
+      short: ICPP
+      years: [2023]
+    - name: ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis
+      short: SC
+      years: [2022]
+    - name: ACM International Conference on Information and Knowledge Management
+      short: CIKM
+      years: [2022]
+
+- label: Journal Reviewer
+  entries:
+    - name: IEEE Transactions on Parallel and Distributed Systems
+    - name: IEEE Transactions on Computers
+    - name: IEEE Transactions on Knowledge and Data Engineering
+    - name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+    - name: IEEE Transactions on Cloud Computing
+    - name: ACM Transactions on Multimedia Computing, Communications, and Applications
+    - name: Journal of Parallel and Distributed Computing
+    - name: Proceedings of the National Academy of Sciences
+    - name: Engineering
+    - name: Results in Engineering
+    - name: Patterns
+    - name: Applied Energy
+    - name: Applied Ocean Research
+    - name: Computers and Geosciences
+    - name: Computers and Electrical Engineering
+    - name: Neural Networks
+    - name: Parallel Computing
+    - name: SoftwareX
+    - name: Journal of Systems Architecture
+    - name: Journal of Visualization
+    - name: Knowledge and Information Systems
+    - name: Knowledge-Based Systems

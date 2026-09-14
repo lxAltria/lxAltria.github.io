@@ -1,0 +1,28 @@
+# Jekyll config. Content lives in _data/*.yml; templates in _layouts/ and
+# _includes/. GitHub Pages builds this server-side.
+
+title: Xin Liang
+email: xin.liang@oregonstate.edu
+description: >-
+  Xin Liang is an Associate Professor in the School of Electrical Engineering
+  and Computer Science at Oregon State University.
+url: "https://lxaltria.github.io"
+baseurl: ""
+
+exclude:
+  - claude.md
+  - scripts/        # maintenance tooling, not part of the site
+  - CV_xin/
+  - .claude/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+
+# Not enabled yet: jekyll-sitemap would replace the static sitemap.xml.
+# plugins:
+#   - jekyll-sitemap
+news_on_home: 22
+
+# Home page "Selected Recent Paper" shows selected publications from this year
+# onward. Set to 2024 to include 2024 papers as well.
+selected_since: 2024

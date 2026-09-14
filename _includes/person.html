@@ -1,0 +1,19 @@
+{%- comment -%}One group-page person block. Usage: {% include person.html who=m %}{%- endcomment -%}
+{%- assign m = include.who -%}
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-6">
+    <h2 align="left">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</h2>
+    {%- if m.bio %}
+    <p align="left">{{ m.bio }}</p>
+    {%- else %}
+    <p align="left">Joined the lab in {{ m.since }}.</p>
+    {%- endif %}
+  </div>
+  <div class="col-md-2">
+    {%- if m.photo %}
+    <img src="{{ m.photo | relative_url }}" class="float-right" style="height:200px;margin-right:10px" alt="{{ m.name }}">
+    {%- endif %}
+  </div>
+  <div class="col-md-2"></div>
+</div>

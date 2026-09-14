@@ -1,0 +1,7 @@
+# Site navigation. Add a page here and it appears in the header everywhere.
+- {label: Home,     url: /}
+- {label: Research, url: /research.html}
+- {label: Group,    url: /group.html}
+- {label: Teaching, url: /teaching.html}
+- {label: Awards,   url: /awards.html}
+- {label: Services, url: /services.html}

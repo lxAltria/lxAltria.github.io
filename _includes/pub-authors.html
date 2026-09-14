@@ -1,0 +1,28 @@
+{%- comment -%}
+Renders one publication's author list.
+  - you are bolded
+  - anyone in _data/people.yml with advisor: xin is underlined
+  - co-first (+) and corresponding (*) markers are placed automatically
+Usage: {% include pub-authors.html pub=some_publication %}
+{%- endcomment -%}
+{%- assign my_students = site.data.people | where: "advisor", "xin" -%}
+{%- assign student_names = my_students | map: "name" -%}
+{%- assign n = include.pub.authors | size -%}
+{%- for a in include.pub.authors -%}
+  {%- if forloop.first -%}
+  {%- elsif forloop.last and n == 2 %} and
+  {%- elsif forloop.last %}, and
+  {%- else -%},
+  {%- endif -%}
+  {{- " " -}}
+  {%- if a == "Xin Liang" -%}
+    <b>{{ a }}</b>
+  {%- elsif student_names contains a -%}
+    {%- comment -%}Underline only -- student links live on the Group page.{%- endcomment -%}
+    <u>{{ a }}</u>
+  {%- else -%}
+    {{- a -}}
+  {%- endif -%}
+  {%- if include.pub.co_first contains a %}<sup>+</sup>{% endif -%}
+  {%- if include.pub.corresponding contains a %}<sup>*</sup>{% endif -%}
+{%- endfor -%}

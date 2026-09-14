@@ -1,0 +1,28 @@
+{%- comment -%}One funded-project entry. Usage: {% include project.html proj=p %}{%- endcomment -%}
+{%- assign p = include.proj -%}
+<li>
+  {%- if p.image %}<img src="{{ p.image | relative_url }}" class="float-right" style="height:120px;margin-right:40px" alt="{{ p.title }}">{% endif -%}
+  {% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  <ul class="glyphicon glyphicon-list-alt">
+    {%- if p.role %}
+    <li>Role: {{ p.role }}</li>
+    {%- endif %}
+    {%- if p.lead_pi %}
+    <li>Lead PI: {{ p.lead_pi }}</li>
+    {%- endif %}
+    {%- if p.sponsor %}
+    <li>Sponsor: {{ p.sponsor }}</li>
+    {%- endif %}
+    {%- if p.amount %}
+    <li>Amount: {{ p.amount }}</li>
+    {%- endif %}
+    {%- if p.start %}
+    {%- assign s = p.start | split: "-" -%}
+    {%- assign e = p.end | split: "-" -%}
+    <li>Period: {{ s[1] }}/{{ s[0] }}{% if p.end %} - {{ e[1] }}/{{ e[0] }}{% endif %}</li>
+    {%- endif %}
+    {%- if p.description %}
+    <li>Project description: {{ p.description }}</li>
+    {%- endif %}
+  </ul>
+</li>

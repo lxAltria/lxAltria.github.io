@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /projects/career.html
+title: "NSF CAREER: Data Polymorphism — Xin Liang"
+description: "NSF CAREER OAC-2628472: Data Polymorphism — Enabling Fast and Adaptable Scientific Data Retrieval with Progressive Representations, led by Xin Liang."
+---
+{%- assign proj = site.data.projects | where: "id", "career-data-polymorphism-fast" | first -%}
+<main role="main" class="container">
+{% include project-header.html proj=proj %}
+      {%- comment -%}`push` is a Jekyll 4 filter; GitHub Pages runs Jekyll 3.10,
+      so count first, then loop again -- no array building.{%- endcomment -%}
+      {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+      {%- assign n = 0 -%}
+      {%- for p in pubs %}{% if p.projects contains "career" %}{% assign n = n | plus: 1 %}{% endif %}{% endfor -%}
+      {%- if n > 0 %}
+      <div><hr></div>
+      <div class="starter-template">
+        <h2>Publications</h2>
+        <div><hr></div>
+        {%- for p in pubs %}{% if p.projects contains "career" %}{% include publication.html pub=p %}{% endif %}{% endfor %}
+      </div>
+      {%- endif %}
+      <div><hr></div>
+</main>

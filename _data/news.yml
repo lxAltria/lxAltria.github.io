@@ -1,0 +1,309 @@
+# ---------------------------------------------------------------------------
+# News -- generated from the previous index.html (including the commented-out
+# archive), then maintained here by hand. 75 items.
+#
+#   date   REQUIRED. ISO 8601, rendered as MM/YYYY. The SOURCE only gave
+#          month+year; the day is a synthetic descending counter that pins the
+#          original within-month ordering (Liquid's sort is not stable). The
+#          day is never displayed. Set a real day if you know it.
+#   text   REQUIRED. Inline HTML allowed and rendered as-is -- the existing
+#          links and <b> emphasis were carried over verbatim.
+#   tags   award | paper | grant | joining | student. Auto-assigned on import;
+#          correct by hand as needed. Lets one file drive several views.
+# ---------------------------------------------------------------------------
+
+- date: 2026-09-28
+  tags: [award]
+  text: "Xuan has received the <b>ACM-IEEE CS George Michael Memorial HPC Fellowships</b> that honors exceptional graduate students (up to three awardees and one honorable mention worldwide) in high performance computing, networking, storage, and large-scale data analysis. This is great achievement and shows recognition from the community. Big congratulations to Xuan! [<a href=\"https://awards.acm.org/hpc-fellows\">Announcement</a>]"
+
+- date: 2026-09-27
+  tags: [award, joining]
+  text: "Shitao and Linze joined our team as PhD students. Both of them have received the <b>OSU College of Engineering scholarship</b> ($10K for one year). Congratulations and welcome, Shitao and Linze!"
+
+- date: 2026-08-28
+  tags: [paper]
+  text: "One paper has been accepted by CIKM'26."
+
+- date: 2026-07-28
+  tags: [paper]
+  text: "Three papers have been accepted by VIS'26."
+
+- date: 2026-07-27
+  tags: [paper]
+  text: "Two papers have been accepted by SC'26. Congratulations to Wenbo!"
+
+- date: 2026-04-28
+  tags: [student]
+  text: "Pu has accepted an offer from University of Texas Rio Grand Valley and will start as a tenure-track Assistant Professor there on August. Congratulations to Prof. Pu!"
+
+- date: 2026-04-27
+  tags: [student]
+  text: "Pu has successfully defended his PhD. Congratulations to Dr. Pu!"
+
+- date: 2026-04-26
+  tags: [paper]
+  text: "One paper has been accepted by TVCG."
+
+- date: 2026-03-28
+  tags: [paper]
+  text: "One paper has been accepted by HPDC'26. Congratulations to Wenbo!"
+
+- date: 2026-02-28
+  tags: [paper]
+  text: "Two papers have been accepted by ICDE'26. Congratulations to Mingze and Xuan!"
+
+- date: 2025-12-28
+  tags: [paper]
+  text: "Two papers have been accepted by IPDPS'26. Congratulations to Pu!"
+
+- date: 2025-07-28
+  tags: [paper]
+  text: "One paper has been accepted by VIS'25."
+
+- date: 2025-07-27
+  tags: [student]
+  text: "Jiannan has accepted an offer from Oakland University and will start as a tenure-track Assistant Professor there on August. Congratulations to Prof. Tian!"
+
+- date: 2025-06-28
+  tags: [paper]
+  text: "Four papers have been accepted by SC'25. Congratulations to Wenbo on his co-first author paper!"
+
+- date: 2025-06-27
+  tags: [award, grant]
+  text: "Jiannan's <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2514035&HistoricalAwards=false\">CSSI project</a> has been awarded by the National Science Foundation (his role: site PI, in collaborations with the University of Houston and the University of Chicago). Congratulations to Jiannan!"
+
+- date: 2025-06-26
+  tags: [award]
+  text: "Xuan's paper on unstructured scientific data compression has been selected as the <b>Best Paper Award</b> in IPDPS'25. Congratulations to Xuan and the team!"
+
+- date: 2025-04-28
+  tags: [paper]
+  text: "One paper has been accepted at VLDB'25. Congratulations to Pu!"
+
+- date: 2025-04-27
+  tags: [award]
+  text: "I am very honored to receive the <b>Pigman College of Engineering Excellence in Research Award</b> (one out of all Assistant Professors in the Stanley and Karen Pigman Colledge of Engineering at the University of Kentucky). Thanks a lot for the recognition from the college!"
+
+- date: 2025-04-26
+  tags: [award, grant]
+  text: "Our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2504255&HistoricalAwards=false\">OAC Core project</a> has been awarded by the National Science Foundation (my role: site PI, in collaborations with the University of Illinois, Urbana-Champaign). This project aims to design a learning-driven framework to mitigate artifacts in scientific lossy data compressors. Thanks a lot to the NSF!"
+
+- date: 2025-03-28
+  tags: [paper]
+  text: "One paper has been accepted at ICDE'25. Congratulations to Mingze!"
+
+- date: 2025-01-28
+  tags: [award]
+  text: "Xuan's paper on unstructured scientific data compression has been nominated for the <b>Best Paper Award</b> in IPDPS'25. Congratulations to Xuan and the team!"
+
+- date: 2025-01-27
+  tags: [paper]
+  text: "One paper has been accepted at PacificVis'25 (TVCG journal track)."
+
+- date: 2024-12-28
+  tags: [paper]
+  text: "Three papers have been accepted in IPDPS'25. Congratulations to Xuan and Pu!"
+
+- date: 2024-12-27
+  tags: [award, grant]
+  text: "My <a href=https://www.nsf.gov/awardsearch/showAward?AWD_ID=2442627&HistoricalAwards=false>CAREER project</a> has been awarded by the National Science Foundation! This project aims to reduce the data movement time for scientific applications by enabling adaptable data retrieval with error control. Thanks a lot to the NSF!"
+
+- date: 2024-12-26
+  tags: [award]
+  text: "Our paper on the <a href=\"https://ieeexplore.ieee.org/abstract/document/9866018\">SZ3 lossy compression framework</a> has been selected as the <a href=\"https://www.computer.org/publications/best-paper-award-winners\">2023 Best Paper Award from IEEE Transactions on Big Data</a> by the IEEE Computer Society Publications Board. Congratulations to the team!"
+
+- date: 2024-11-28
+  tags: [award]
+  text: "I am very honored to receive the <b>2024 IEEE CS TCHPC Early Career Researchers Award For Excellence in High Performance Computing</b>. Thanks a lot for the recognition from the community! [<a href=\"https://tc.computer.org/tchpc/2024/09/16/2024-ieee-cs-tchpc-award-winners/\">Announcement</a>] [<a href=\"https://www.ccs.uky.edu/2024-ieee-cs-tchpc-award-winner-dr-xin-liang-computer-science-university-of-kentucky/\">UK CCS News</a>]"
+
+- date: 2024-11-27
+  tags: [paper]
+  text: "One paper has been accepted at SIGMOD'25."
+
+- date: 2024-10-28
+  tags: [joining]
+  text: "Dr. Jiannan Tian joined our team as a postdoc researcher. Welcome Jiannan!"
+
+- date: 2024-09-28
+  tags: [grant]
+  text: "We received a renewal of our subcontract from Argonne National Laboratory to continue the investigation of feature regeneration in lossy compressors. Thanks a lot to ANL!"
+
+- date: 2024-08-28
+  tags: [joining]
+  text: "Wenbo Li joined our team as a PhD student. Welcome Wenbo!"
+
+- date: 2024-07-28
+  tags: [paper]
+  text: "One paper has been accepted in VIS'24."
+
+- date: 2024-06-28
+  tags: [paper]
+  text: "Two papers have been accepted in SC'24. Congratulations to Xuan on getting her first SC paper accepted!"
+
+- date: 2024-03-28
+  tags: [paper]
+  text: "One paper has been accepted in EuroVis'24."
+
+- date: 2024-01-28
+  tags: [paper]
+  text: "One paper has been accepted in IPDPS'24."
+
+- date: 2023-12-28
+  tags: [paper]
+  text: "One paper has been accepted in ICDE'24. Congratulations to Mingze!"
+
+- date: 2023-11-28
+  tags: [award, grant]
+  text: "Dr. Liang has been recommended as EPSCoR Research Fellows for our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2327266&HistoricalAwards=false\">RII Track-4 project</a> awarded by the National Science Foundation (my role: PI). This project aims to improve the performance of MPI on exascale systems with adaptive lossy compression methods. Thanks a lot to the NSF!"
+
+- date: 2023-11-27
+  tags: [paper]
+  text: "One paper has been accepted in SIGMOD'24."
+
+- date: 2023-09-28
+  tags: [paper]
+  text: "One paper has been accepted in HiPC'23. Congratulations to Pu!"
+
+- date: 2023-08-28
+  tags: [award, grant]
+  text: "Our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313122&HistoricalAwards=false\">OAC Core project</a> has been awarded by the National Science Foundation (my role: lead PI, in collaborations with the University of Utah and the Ohio State University). This project aims to design topology-aware compressors for scientific applications. Thanks a lot to the NSF!"
+
+- date: 2023-08-27
+  tags: [joining]
+  text: "Xuan Wu joined our team as a PhD student. Welcome Xuan!"
+
+- date: 2023-06-28
+  tags: [paper]
+  text: "One paper has been accepted in VIS'23."
+
+- date: 2023-06-27
+  tags: [award, grant]
+  text: "Our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2311756&HistoricalAwards=false\">CSSI project</a> has been awarded by the National Science Foundation (my role: lead PI, in collaborations with New Jersey Institute of Technology and Temple University). This project aims to develop progressive data management middleware to advance exascale science. Thanks a lot to the NSF!"
+
+- date: 2023-05-28
+  tags: [paper]
+  text: "One paper has been accepted in ICS'23 and nominated in the <b>Best Paper Finalists</b>!"
+
+- date: 2023-04-28
+  tags: [paper]
+  text: "Two papers have been accepted in HPDC'23."
+
+- date: 2023-02-28
+  tags: [paper]
+  text: "One paper has been accepted in ICDE'23."
+
+- date: 2023-01-28
+  tags: [joining]
+  text: "Mikhail Kovalev and Andrew Chen from Paul Laurence Dunbar High School joined our team to complete their capstone research project. Welcome Mikhail and Andrew!"
+
+- date: 2022-11-28
+  tags: [paper]
+  text: "One paper has been accepted in VLDB'23. Congratulations to Pu!"
+
+- date: 2022-11-27
+  tags: [paper]
+  text: "One paper has been accepted in PPoPP'23."
+
+- date: 2022-11-26
+  tags: [award]
+  text: "Attended the Turing lecture by Dr. Jack Dongarra at SC'22. Dr. Dongarra received <a href=\"https://awards.acm.org/about/2021-turing\">the 2021 ACM A.M. Turing Award</a> for pioneering contributions to numerical algorithms and libraries that enabled high performance computational software. [<a href=\"https://www.youtube.com/watch?v=cSO0Tc2w5Dg\">video</a>]"
+
+- date: 2022-10-28
+  tags: [grant]
+  text: "We received a subcontract from Argonne National Laboratory to investigate feature regeneration in lossy compressors. Thanks a lot to ANL!"
+
+- date: 2022-10-27
+  tags: [paper]
+  text: "One paper has been accepted in IEEE Transactions on Visualization and Computer Graphics."
+
+- date: 2022-08-28
+  tags: [joining]
+  text: "Mingze Xia joined our team as a PhD student. Welcome Mingze!"
+
+- date: 2022-08-27
+  tags: [award, grant]
+  text: "Our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330364\">CyberTraining project</a> has been awarded by the National Science Foundation (my role: site PI, in collaboration with University of North Texas, Southern Illinois University Carbondale, and Missouri University of Science and Technology). This project aims to host training workshops to develop workforce for deep learning with GPU-based systems. Thanks a lot to the NSF!"
+
+- date: 2022-08-26
+  tags: [paper]
+  text: "One paper has been accepted in IEEE Transactions on Big Data."
+
+- date: 2022-06-28
+  tags: [paper]
+  text: "One paper has been accepted in SC'22."
+
+- date: 2022-05-28
+  tags: [paper]
+  text: "One paper has been accepted in SSDBM'22."
+
+- date: 2022-04-28
+  tags: [paper]
+  text: "One paper has been accepted in HPDC'22."
+
+- date: 2022-02-28
+  tags: [award, grant]
+  text: "Our <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330367\">CRII project</a> has been awarded by the National Science Foundation (my role: PI). This project aims to enable the preservation of quantities of interest in scientific lossy compressors. Thanks a lot to the NSF!"
+
+- date: 2022-01-28
+  tags: [joining]
+  text: "Pu Jiao joined our team as a PhD student. Welcome Pu!"
+
+- date: 2021-11-28
+  tags: [paper]
+  text: "One paper has been accepted in ICDE'22."
+
+- date: 2021-11-27
+  text: "I am serving as a Guest Editor of the special issue <a href=\"https://www.mdpi.com/journal/electronics/special_issues/new_trends_HPC\">\"New Trends for High-Performance Computing\"</a> in <a href=\"https://www.mdpi.com/journal/electronics\">Electronics</a>. Please consider making a submission!"
+
+- date: 2021-10-28
+  tags: [award]
+  text: "Our <a href=\"https://szcompressor.org\">SZ compression software</a> has been selected for <a href=\"https://www.rdworldonline.com/rd-100-2021-winner/sz-a-lossy-compression-framework-for-scientific-data/\">2021 R&D100 Awards</a>!"
+
+- date: 2021-08-28
+  tags: [paper]
+  text: "Two papers have been accepted in Cluster'21."
+
+- date: 2021-07-28
+  tags: [paper]
+  text: "One paper has been accepted in TPDS-SS-Innovative R&D toward the Exascale Era."
+
+- date: 2021-06-28
+  tags: [paper]
+  text: "Two papers have been accepted in SC'21."
+
+- date: 2021-05-28
+  tags: [paper]
+  text: "One paper has been accepted in IEEE Transactions on Computers."
+
+- date: 2020-12-28
+  tags: [paper]
+  text: "Two papers have been accepted in IPDPS'21."
+
+- date: 2020-10-28
+  text: "Our LDRD project (my role: PI) was funded by ORNL."
+
+- date: 2020-09-28
+  text: "Our Sirius-2 project (my role: Senior Personnel) was funded by DOE ASCR."
+
+- date: 2020-09-27
+  text: "Our RADIDS-2 project (my role: Senior Personnel) was funded by DOE ASCR."
+
+- date: 2020-09-26
+  tags: [paper]
+  text: "One paper has been accepted in TPDS-SS-AI."
+
+- date: 2020-08-28
+  tags: [paper]
+  text: "One paper has been accepted in Cluster'20."
+
+- date: 2020-07-28
+  tags: [paper]
+  text: "One paper has been accepted in PACT'20."
+
+- date: 2020-03-28
+  tags: [paper]
+  text: "One paper has been accepted in HPDC'20."
+
+- date: 2020-01-28
+  tags: [paper]
+  text: "One paper has been accepted in PacificVis'20."
