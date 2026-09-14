@@ -218,6 +218,7 @@
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, MO, USA"
   dates: "Nov 16 - 21, 2025"
+  acceptance: "22.0% (137/623)"
   co_first: [Yanliang Li, Wenbo Li]
   selected: true
   links:
@@ -234,6 +235,7 @@
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, MO, USA"
   dates: "Nov 16 - 21, 2025"
+  acceptance: "22.0% (137/623)"
   co_first: [Shixun Wu, Jinwen Pan]
   corresponding: [Jinyang Liu]
   links:
@@ -249,6 +251,7 @@
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, MO, USA"
   dates: "Nov 16 - 21, 2025"
+  acceptance: "22.0% (137/623)"
   links:
     doi: 10.1145/3712285.3759878
 
@@ -262,6 +265,7 @@
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, MO, USA"
   dates: "Nov 16 - 21, 2025"
+  acceptance: "22.0% (137/623)"
   links:
     doi: 10.1145/3712285.3759856
   projects: [prodm, rii]
@@ -386,6 +390,7 @@
   venue: "Proceedings of the 2024 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Atlanta, GA, USA"
   dates: "Nov 17 - 22, 2024"
+  acceptance: "21.1% (99/470)"
   corresponding: [Xin Liang]
   selected: true
   links:
@@ -402,6 +407,7 @@
   venue: "Proceedings of the 2024 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Atlanta, GA, USA"
   dates: "Nov 17 - 22, 2024"
+  acceptance: "21.1% (99/470)"
   links:
     doi: 10.1109/sc41406.2024.00110
   projects: [rii]
@@ -636,6 +642,7 @@
   venue: "Proceedings of the 2022 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Dallas, TX, USA"
   dates: "Nov 13 - 18, 2022"
+  acceptance: "25.3% (81/320)"
   links:
     doi: 10.1109/sc41404.2022.00067
   projects: [crii]
@@ -720,7 +727,7 @@
   venue: "Proceedings of the 2021 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, Missouri, USA"
   dates: "Nov 14 - 19, 2021"
-  acceptance: "23.6% (86/365)"
+  acceptance: "25.9% (98/379)"
   links:
     doi: 10.1145/3458817.3476195
 
@@ -734,7 +741,7 @@
   venue: "Proceedings of the 2021 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "St. Louis, Missouri, USA"
   dates: "Nov 14 - 19, 2021"
-  acceptance: "23.6% (86/365)"
+  acceptance: "25.9% (98/379)"
   selected: true
   links:
     doi: 10.1145/3458817.3476179
@@ -849,7 +856,7 @@
   venue: "Proceedings of the 2019 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Denver, Colorado, USA"
   dates: "Nov 17 - 22, 2019"
-  acceptance: "20.9% (72/344)"
+  acceptance: "25.7% (87/339)"
   selected: true
   links:
     doi: 10.1145/3295500.3356193
@@ -864,7 +871,7 @@
   venue: "Proceedings of the 2019 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Denver, Colorado, USA"
   dates: "Nov 17 - 22, 2019"
-  acceptance: "20.9% (72/344)"
+  acceptance: "25.7% (87/339)"
   links:
     doi: 10.1145/3295500.3356195
 
@@ -1009,7 +1016,7 @@
   venue: "Proceedings of the 2018 ACM/IEEE International  Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Dallas, Texas, USA"
   dates: "Nov 11 - 16, 2018"
-  acceptance: "19.1% (55/288)"
+  acceptance: "23.6% (68/288)"
   links:
     doi: 10.1109/SC.2018.00071
 
@@ -1049,7 +1056,7 @@
   venue: "Proceedings of the 2017 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Denver, Colorado, USA"
   dates: "Nov 12 - 17, 2017"
-  acceptance: "18.6% (61/327)"
+  acceptance: "18.7% (61/327)"
   selected: true
   links:
     doi: 10.1145/3126908.3126915
@@ -1078,6 +1085,7 @@
   venue: "Proceedings of the 2016 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
   location: "Salt Lake City, Utah, USA"
   dates: "Nov 13 - 18, 2016"
+  acceptance: "18.3% (81/442)"
   links:
     doi: 10.1109/sc.2016.56
 
