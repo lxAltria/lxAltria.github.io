@@ -9,7 +9,7 @@ description: "NSF RII Track-4 EPSCoR Research Fellowship OAC-2327266: Scalable M
 {% include project-header.html proj=proj %}
       {%- comment -%}`push` is a Jekyll 4 filter; GitHub Pages runs Jekyll 3.10,
       so count first, then loop again -- no array building.{%- endcomment -%}
-      {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+      {%- assign pubs = site.data.publications | sort: "notified" | reverse -%}
       {%- assign n = 0 -%}
       {%- for p in pubs %}{% if p.projects contains "rii" %}{% assign n = n | plus: 1 %}{% endif %}{% endfor -%}
       {%- if n > 0 %}

@@ -77,10 +77,10 @@ description: "Xin Liang is an Associate Professor in the School of Electrical En
       </div>
       <div><hr></div>
       <div class="starter-template">
-        <h2>Selected Recent Publications (<a href="{{ '/research.html' | relative_url }}#publication">Full List</a>, <a href="https://scholar.google.com/citations?user=QRj1QroAAAAJ&hl=en">Google Scholar</a>)</h2>
+        <h2>Selected Publications (<a href="{{ '/research.html' | relative_url }}#publication">Full List</a>, <a href="https://scholar.google.com/citations?user=QRj1QroAAAAJ&hl=en">Google Scholar</a>)</h2>
         <div><hr></div>
         <p><i>My students are underlined.</i></p>
-        {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+        {%- assign pubs = site.data.publications | sort: "notified" | reverse -%}
         {%- for p in pubs %}
           {%- assign yr = p.date | date: "%Y" | plus: 0 -%}
           {%- if p.selected and yr >= site.selected_since %}{% include publication.html pub=p %}{% endif -%}

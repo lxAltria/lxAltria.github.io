@@ -11,10 +11,17 @@
 #                 Names are matched against _data/people.yml to decide
 #                 bolding (you) and underlining (your students) automatically.
 #                 Do NOT put <b>/<u>/<sup> in here.
-#   date          REQUIRED. ISO 8601. Use the VENUE date (when the paper is
-#                 presented/published), not the acceptance date -- otherwise
-#                 IPDPS '25 files under 2024 when grouped by year. Announce
-#                 acceptances in _data/news.yml instead. Drives ALL sorting.
+#   date          REQUIRED. ISO 8601. The VENUE date (when the paper is
+#                 presented/published). Drives what is DISPLAYED.
+#   notified      REQUIRED. ISO 8601. When the paper was notified/accepted.
+#                 Drives ALL SORTING -- lists are ordered by notification, not
+#                 by venue date. Taken from the matching announcement in
+#                 _data/news.yml, so it inherits that file's convention: the
+#                 MONTH is real, the day is only a tiebreaker that keeps papers
+#                 from one venue together when two venues share a month.
+#                 Where no announcement exists the venue date is used and the
+#                 line says so. Every record needs this field -- Jekyll's `sort`
+#                 pushes records missing the property to the top after reverse.
 #   type          conference | journal | workshop | preprint | poster
 #   series        Short badge shown in the left column, e.g. "SC'26".
 #   venue         Full proceedings / journal string, as printed.
@@ -46,6 +53,7 @@
   title: "Accelerating Scientific Data Analytics Using Reconstruction-Free Error Control"
   authors: [Zhenlu Qin, Qi Chen, Suhib Alhendi, Xin Liang, Weiqi Liu, Qian Gong, Qing Liu, Norbert Podhorszki, Scott Klasky]
   date: 2026-11-07
+  notified: 2026-08-28
   type: conference
   series: "CIKM'26"
   venue: "Proceedings of the 35th ACM International Conference on Information and Knowledge Management"
@@ -56,6 +64,7 @@
   title: "EXaCTz: Guaranteed Extremum Graph and Contour Tree Preservation for Distributed and GPU-Parallel Lossy Compression"
   authors: [Yuxiao Li, Mingze Xia, Xin Liang, Bei Wang, Hanqi Guo]
   date: 2026-11-09
+  notified: 2026-07-28
   type: conference
   series: "VIS'26"
   venue: "Proceedings of the 2026 IEEE VIS Conference"
@@ -66,6 +75,7 @@
   title: "FZ-VIS: A Visual Analytics Framework for Quantities-of-Interest-Aware Scientific Lossy Compression"
   authors: [Guoxi Liu, Yuxiao Li, Congrong Ren, Robert Underwood, Xin Liang, Bei Wang, Sheng Di, Franck Cappello, Hanqi Guo]
   date: 2026-11-09
+  notified: 2026-07-28
   type: conference
   series: "VIS'26"
   venue: "Proceedings of the 2026 IEEE VIS Conference"
@@ -76,6 +86,7 @@
   title: "FeatureZ : A Generalized Framework for User-Defined Feature-Preserving Scientific Data Compression"
   authors: [Nathaniel Gorski, Xin Liang, Hanqi Guo, Bei Wang]
   date: 2026-11-09
+  notified: 2026-07-28
   type: conference
   series: "VIS'26"
   venue: "Proceedings of the 2026 IEEE VIS Conference"
@@ -86,6 +97,7 @@
   title: "Improving Progressive Compression with Adaptive Interpolation and Coefficient Decomposition"
   authors: [Wenbo Li, Xuan Wu, Qian Gong, Pu Jiao, Jieyang Chen, Qing Liu, Norbert Podhorszki, Scott Klasky, Xin Liang]
   date: 2026-11-15
+  notified: 2026-07-27
   type: conference
   series: "SC'26"
   venue: "Proceedings of the 2026 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -97,6 +109,7 @@
   title: "BlockMGARD: Accelerating Adaptive Scientific Data Reduction with Region-of-Interest Error Control on GPUs"
   authors: [Yanliang Li, Qian Gong, Qing Liu, Jaemoon Lee, Norbert Podhorszki, Scott Klasky, Xin Liang, Jieyang Chen]
   date: 2026-11-15
+  notified: 2026-07-27
   type: conference
   series: "SC'26"
   venue: "Proceedings of the 2026 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -107,6 +120,7 @@
   title: "QProR: An Efficient Framework for Quantity-of-Interest Based Progressive Retrieval with Guaranteed Error Control"
   authors: [Wenbo Li, Qian Gong, Xuan Wu, Jieyang Chen, Qing Liu, Xubin He, Norbert Podhorszki, Scott Klasky, Xin Liang]
   date: 2026-07-13
+  notified: 2026-03-28
   type: conference
   series: "HPDC'26"
   venue: "Proceedings of the 35th ACM International Symposium on High-Performance Parallel and Distributed Computing"
@@ -121,6 +135,7 @@
   title: "Enabling Homomorphic Analytical Operations on Compressed Scientific Data with Multi-stage Decompression"
   authors: [Xuan Wu, Sheng Di, Tripti Agarwal, Kai Zhao, Xin Liang, Franck Cappello]
   date: 2026-05-04
+  notified: 2026-02-28
   type: conference
   series: "ICDE'26"
   venue: "Proceedings of the 42nd IEEE International Conference on Data Engineering"
@@ -136,6 +151,7 @@
   title: "Time-varying Vector Field Compression with Preserved Critical Point Trajectories"
   authors: [Mingze Xia, Yuxiao Li, Pu Jiao, Bei Wang, Xin Liang, Hanqi Guo]
   date: 2026-05-04
+  notified: 2026-02-28
   type: conference
   series: "ICDE'26"
   venue: "Proceedings of the 42nd IEEE International Conference on Data Engineering"
@@ -151,11 +167,13 @@
   title: "Mitigating Artifacts in Pre-quantization Based Scientific Data Compressors with Quantization-aware Interpolation"
   authors: [Pu Jiao, Sheng Di, Jiannan Tian, Mingze Xia, Xuan Wu, Yang Zhang, Xin Liang, Franck Cappello]
   date: 2026-05-25
+  notified: 2025-12-28
   type: conference
   series: "IPDPS'26"
   venue: "Proceedings of the 40th IEEE International Parallel & Distributed Processing Symposium"
   location: "New Orleans, LA"
   dates: "May 25 - May 29, 2026"
+  acceptance: "23.3% (101/434)"
   corresponding: [Xin Liang]
   selected: true
   links:
@@ -165,11 +183,13 @@
   title: "pMSz: A Distributed Parallel Algorithm for Correcting Extrema and Morse-Smale Segmentations in Lossy Compression"
   authors: [Yuxiao Li, Mingze Xia, Xin Liang, Bei Wang, Robert Underwood, Sheng Di, Hemant Sharma, Dishant Beniwal, Franck Cappello, Hanqi Guo]
   date: 2026-05-25
+  notified: 2025-12-28
   type: conference
   series: "IPDPS'26"
   venue: "Proceedings of the 40th IEEE International Parallel & Distributed Processing Symposium"
   location: "New Orleans, LA"
   dates: "May 25 - May 29, 2026"
+  acceptance: "23.3% (101/434)"
   links:
     doi: 10.1109/ipdps65963.2026.00025
   projects: [rii]
@@ -178,11 +198,13 @@
   title: "TFZ: Topology-Preserving Compression of 2D Symmetric and Asymmetric Second-Order Tensor Fields"
   authors: [Nathaniel Gorski, Xin Liang, Hanqi Guo, Bei Wang]
   date: 2025-11-02
+  notified: 2025-07-28
   type: conference
   series: "VIS'25"
   venue: "Proceedings of the 2025 IEEE VIS Conference"
   location: "Vienna, Austria"
   dates: "Nov 2 - 7, 2025"
+  acceptance: "24.4% (131/537)"
   links:
     doi: 10.1109/tvcg.2025.3634844
 
@@ -190,6 +212,7 @@
   title: "HP-MDR: High-performance and Portable Data Refactoring and Progressive Retrieval with Advanced GPUs"
   authors: [Yanliang Li, Wenbo Li, Qian Gong, Qing Liu, Norbert Podhorszki, Scott Klasky, Xin Liang, Jieyang Chen]
   date: 2025-11-16
+  notified: 2025-06-28
   type: conference
   series: "SC'25"
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -205,6 +228,7 @@
   title: "Boosting Scientific Error-Bounded Lossy Compression through Optimized Synergistic Lossy-Lossless Orchestration"
   authors: [Shixun Wu, Jinwen Pan, Jinyang Liu, Jiannan Tian, Ziwei Qiu, Jiajun Huang, Kai Zhao, Xin Liang, Sheng Di, Zizhong Chen, Franck Cappello]
   date: 2025-11-16
+  notified: 2025-06-28
   type: conference
   series: "SC'25"
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -219,6 +243,7 @@
   title: "Stability-preserving Lossy Compression for Large-scale Partial Differential Equations"
   authors: [Qian Gong, Mark Ainsworth, Jieyang Chen, Xin Liang, Liangji Zhu, Ethan Klasky, Tushar Athawale, Qing Liu, Anand Rangarajan, Sanjay Ranka, Scott Klasky]
   date: 2025-11-16
+  notified: 2025-06-28
   type: conference
   series: "SC'25"
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -231,6 +256,7 @@
   title: "What to Support When You’re Compressing: The State of Practice, Gaps, and Opportunities for Scientific Data Compression"
   authors: [Franck Cappello et. al]
   date: 2025-11-16
+  notified: 2025-06-28
   type: conference
   series: "SC'25"
   venue: "Proceedings of the 2025 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -244,6 +270,7 @@
   title: "QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression"
   authors: [Jinyang Liu, Pu Jiao, Kai Zhao, Xin Liang, Sheng Di, Franck Cappello]
   date: 2025-09-01
+  notified: 2025-04-28
   type: conference
   series: "VLDB'25"
   venue: "Proceedings of the 51st International Conference on Very Large Data Bases"
@@ -260,11 +287,13 @@
   title: "TspSZ: An Efficient Parallel Error-Bounded Lossy Compressor for Topological Skeleton Preservation"
   authors: [Mingze Xia, Bei Wang, Yuxiao Li, Pu Jiao, Xin Liang, Hanqi Guo]
   date: 2025-05-19
+  notified: 2025-03-28
   type: conference
   series: "ICDE'25"
   venue: "Proceedings of the 41st IEEE International Conference on Data Engineering"
   location: "Hong Kong SAR, China"
   dates: "May 19 - 23, 2025"
+  acceptance: "19.8% (300/1518)"
   corresponding: [Xin Liang]
   selected: true
   links:
@@ -274,11 +303,13 @@
   title: "Enabling Efficient Error-controlled Lossy Compression for Unstructured Scientific Data"
   authors: [Xuan Wu, Sheng Di, Congrong Ren, Pu Jiao, Mingze Xia, Cheng Wang, Hanqi Guo, Xin Liang, Franck Cappello]
   date: 2025-06-03
+  notified: 2024-12-28
   type: conference
   series: "IPDPS'25"
   venue: "Proceedings of the 39th IEEE International Parallel & Distributed Processing Symposium"
   location: "Milan, Italy"
   dates: "June 3 - June 7, 2025"
+  acceptance: "24.7% (105/425)"
   award: "Best Paper Award"
   corresponding: [Xin Liang]
   selected: true
@@ -290,11 +321,13 @@
   title: "Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction"
   authors: [Pu Jiao, Sheng Di, Mingze Xia, Xuan Wu, Jinyang Liu, Xin Liang, Franck Cappello]
   date: 2025-06-03
+  notified: 2024-12-28
   type: conference
   series: "IPDPS'25"
   venue: "Proceedings of the 39th IEEE International Parallel & Distributed Processing Symposium"
   location: "Milan, Italy"
   dates: "June 3 - June 7, 2025"
+  acceptance: "24.7% (105/425)"
   corresponding: [Xin Liang]
   selected: true
   links:
@@ -305,11 +338,13 @@
   title: "HPDR: High-Performance Portable Scientific Data Reduction Framework"
   authors: [Jieyang Chen, Qian Gong, Xin Liang, Qing Liu, Lipeng Wan, Yanliang Li, Norbert Podhorszki, Scott Klasky]
   date: 2025-06-03
+  notified: 2024-12-28
   type: conference
   series: "IPDPS'25"
   venue: "Proceedings of the 39th IEEE International Parallel & Distributed Processing Symposium"
   location: "Milan, Italy"
   dates: "June 3 - June 7, 2025"
+  acceptance: "24.7% (105/425)"
   links:
     doi: 10.1109/ipdps64566.2025.00101
   projects: [prodm, rii]
@@ -318,11 +353,13 @@
   title: "LCP: Enhancing Scientific Data Management with Lossy Compression for Particles"
   authors: [Longtao Zhang, Ruoyu Li, Congrong Ren, Sheng Di, Jinyang Liu, Jiajun Huang, Robert Underwood, Pascal Grosset, Dingwen Tao, Xin Liang, Hanqi Guo, Franck Cappello, Kai Zhao]
   date: 2025-06-22
+  notified: 2024-11-27
   type: conference
   series: "SIGMOD'25"
   venue: "Proceedings of the 2025 ACM SIGMOD International Conference on Management of Data"
   location: "Berlin, Germany"
   dates: "June 22 - 27, 2025"
+  acceptance: "24.8% (250/1008)"
   links:
     doi: 10.1145/3709700
 
@@ -330,6 +367,7 @@
   title: "A General Framework for Augmenting Lossy Compressors with Topological Guarantees"
   authors: [Nathan Gorski, Xin Liang, Hanqi Guo, Lin Yan, Bei Wang]
   date: 2025-04-22
+  notified: 2025-01-27
   type: conference
   series: "PacificVis'25"
   venue: "Proceedings of IEEE Transactions on Visualization and Computer Graphics (IEEE PacificVis 2025 Journal Track), Taipei"
@@ -342,6 +380,7 @@
   title: "Error-controlled Progressive Retrieval of Scientific Data under Derivable Quantities of Interest"
   authors: [Xuan Wu, Qian Gong, Jieyang Chen, Qing Liu, Norbert Podhorszki, Xin Liang, Scott Klasky]
   date: 2024-11-17
+  notified: 2024-06-28
   type: conference
   series: "SC'24"
   venue: "Proceedings of the 2024 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -357,6 +396,7 @@
   title: "hZCCL: Accelerating Collective Communication with Co-Designed Homomorphic Compression"
   authors: [Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Jinyang Liu, Zizhe Jian, Xin Liang, Kai Zhao, Xiaoyi Lu, Zizhong Chen, Franck Cappello]
   date: 2024-11-17
+  notified: 2024-06-28
   type: conference
   series: "SC'24"
   venue: "Proceedings of the 2024 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -370,11 +410,13 @@
   title: "MSz: An Efficient Parallel Algorithm for Correcting Morse-Smale Segmentations in Error-Bounded Lossy Compressors"
   authors: [Yuxiao Li, Xin Liang, Bei Wang, Yongfeng Qiu, Lin Yan, Hanqi Guo]
   date: 2024-10-22
+  notified: 2024-07-28
   type: conference
   series: "VIS'24"
   venue: "Proceedings of the 2024 IEEE VIS Conference"
   location: "Melbourne, Australia"
   dates: "Oct 22 - 27, 2024"
+  acceptance: "22.3% (124/557)"
   links:
     doi: 10.1109/tvcg.2024.3456337
   projects: [rii]
@@ -383,10 +425,12 @@
   title: "A Prediction-Traversal Approach for Compressing Scientific Data on Unstructured Meshes with Bounded Error"
   authors: [Congrong Ren, Xin Liang, Hanqi Guo]
   date: 2024-05-27
+  notified: 2024-03-28
   type: conference
   series: "EuroVis'24"
   venue: "Proceedings of 26th EG Conference on Visualization, Odense, Denmark"
   dates: "May 27 - May 31, 2024"
+  acceptance: "26.1% (35/134)"
   links:
     doi: 10.1111/cgf.15097
   projects: [crii]
@@ -395,10 +439,12 @@
   title: "CliZ: Optimizing Lossy Compression for Climate Datasets with Adaptive Fine-tuned Data Prediction"
   authors: [Zizhe Jian, Sheng Di, Jinyang Liu, Kai Zhao, Xin Liang, Haiying Xu, Robert Underwood, Shixun Wu, Jiajun Huang, Zizhong Chen, Franck Cappello]
   date: 2024-05-27
+  notified: 2024-01-28
   type: conference
   series: "IPDPS'24"
   venue: "Proceed- ings of 38th IEEE International Parallel & Distributed Processing Symposium, San Francisco, California"
   dates: "May 27 - May 31, 2024"
+  acceptance: "26.1% (88/337)"
   links:
     doi: 10.1109/ipdps57955.2024.00044
   projects: [crii, prodm]
@@ -407,11 +453,13 @@
   title: "Preserving Topological Feature with Sign-of-Determinant Predicates in Lossy Compression: A Case Study of Vector Field Critical Points"
   authors: [Mingze Xia, Sheng Di, Franck Cappello, Pu Jiao, Kai Zhao, Jinyang Liu, Xuan Wu, Xin Liang, Hanqi Guo]
   date: 2024-05-13
+  notified: 2023-12-28
   type: conference
   series: "ICDE'24"
   venue: "Proceedings of the 40th IEEE International Conference on Data Engineering"
   location: "Utrecht, Netherlands"
   dates: "May 13 - 16, 2024"
+  acceptance: "25.4% (376/1481)"
   corresponding: [Xin Liang]
   selected: true
   links:
@@ -422,11 +470,13 @@
   title: "High-performance Effective Scientific Error-bounded Lossy Compression with Auto-tuned Multi-component Interpolation"
   authors: [Jinyang Liu, Sheng Di, Kai Zhao, Xin Liang, Sian Jin, Zizhe Jian, Jiajun Huang, Shixun Wu, Zizhong Chen, Franck Cappello]
   date: 2024-06-09
+  notified: 2023-11-27
   type: conference
   series: "SIGMOD'24"
   venue: "Proceedings of the 2024 ACM SIGMOD International Conference on Management of Data"
   location: "Santiago, Chile"
   dates: "June 9 - 15, 2024"
+  acceptance: "27.7% (213/768)"
   links:
     doi: 10.1145/3639259
   projects: [crii]
@@ -435,6 +485,7 @@
   title: "Scientific Error-bounded Lossy Compression with Super-resolution Neural Networks"
   authors: [Jinyang Liu, Sheng Di, Sian Jin, Kai Zhao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2023-12-15
+  notified: 2023-12-15   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "BigData'23"
   venue: "Proceedings of the 2023 IEEE International Conference on Big Data"
@@ -448,6 +499,7 @@
   title: "Characterization and Detection of Artifacts for Error-controlled Lossy Compressors"
   authors: [Pu Jiao, Sheng Di, Jinyang Liu, Xin Liang, Franck Cappello]
   date: 2023-12-18
+  notified: 2023-09-28
   type: conference
   series: "HiPC'23"
   venue: "Proceedings of the 30th IEEE International Conference on High Performance Computing, Data, and Analytics"
@@ -463,11 +515,13 @@
   title: "TopoSZ: Preserving Topology in Error-Bounded Lossy Compression"
   authors: [Lin Yan, Xin Liang, Hanqi Guo, Bei Wang]
   date: 2023-10-22
+  notified: 2023-06-28
   type: conference
   series: "VIS'23"
   venue: "Proceedings of the 34th IEEE VIS Conference"
   location: "Melbourne, Australia"
   dates: "Oct 22 - 27, 2023"
+  acceptance: "24.7% (133/539)"
   links:
     doi: 10.1109/tvcg.2023.3326920
   projects: [crii]
@@ -476,11 +530,13 @@
   title: "RAPIDS: Reconciling Availability, Accuracy, and Performance in Managing Geo-Distributed Scientific Data"
   authors: [Lipeng Wan, Jieyang Chen, Xin Liang, Ana Gainaru, Qian Gong, Qing Liu, Ben Whitney, Joy Arulraj, Zhengchun Liu, Ian Foster, Scott Klasky]
   date: 2023-06-20
+  notified: 2023-04-28
   type: conference
   series: "HPDC'23"
   venue: "Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing"
   location: "Orlando, FL"
   dates: "Jun 20 - 23, 2023"
+  acceptance: "21.2% (22/104)"
   links:
     doi: 10.1145/3588195.3592983
 
@@ -488,11 +544,13 @@
   title: "FZ-GPU: A Fast and High-Ratio Lossy Compressor for Scientific Computing Applications on GPUs"
   authors: [Boyuan Zhang, Jiannan Tian, Sheng Di, Xiaodong Yu, Yunhe Feng, Xin Liang, Dingwen Tao, Franck Cappello]
   date: 2023-06-20
+  notified: 2023-04-28
   type: conference
   series: "HPDC'23"
   venue: "Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing"
   location: "Orlando, FL"
   dates: "Jun 20 - 23, 2023"
+  acceptance: "21.2% (22/104)"
   links:
     doi: 10.1145/3588195.3592994
 
@@ -500,11 +558,13 @@
   title: "FAZ: A flexible auto-tuned modular error-bounded compression framework for scientific data"
   authors: [Jinyang Liu, Sheng Di, Kai Zhao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2023-06-21
+  notified: 2023-05-28
   type: conference
   series: "ICS'23"
   venue: "Proceedings of the 37th International Conference on Supercomputing"
   location: "Orlando, FL"
   dates: "Jun 21 - 23, 2023"
+  acceptance: "29.4% (40/136)"
   award: "Nominated in the Best Paper Finalist"
   links:
     doi: 10.1145/3577193.3593721
@@ -514,11 +574,13 @@
   title: "Improving Progressive Retrieval for HPC Scientific Data using Deep Neural Network"
   authors: [Jinzhen Wang, Xin Liang, Ben Whitney, Jieyang Chen, Qian Gong, Xubin He, Lipeng Wan, Scott Klasky, Norbert Podhorszki, Qing Liu]
   date: 2023-04-04
+  notified: 2023-02-28
   type: conference
   series: "ICDE'23"
   venue: "Proceedings of the 39th International Conference on Data Engineering"
   location: "Anaheim, CA"
   dates: "Apr 4 - 6, 2023"
+  acceptance: "30.6% (229/748)"
   links:
     doi: 10.1109/icde55515.2023.00209
 
@@ -526,6 +588,7 @@
   title: "Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data"
   authors: [Pu Jiao, Sheng Di, Hanqi Guo, Kai Zhao, Jiannan Tian, Dingwen Tao, Xin Liang, Franck Cappello]
   date: 2023-08-28
+  notified: 2022-11-28
   type: conference
   series: "VLDB'23"
   venue: "Proceedings of the 49th International Conference on Very Large Data Bases"
@@ -541,11 +604,13 @@
   title: "Improving Energy Saving of One-sided Matrix Decompositions on CPU-GPU Heterogeneous Systems"
   authors: [Jieyang Chen, Xin Liang, Kai Zhao, Hadi Zamani Sabzi, Laxmi Bhuyan, Zizhong Chen]
   date: 2023-02-25
+  notified: 2022-11-27
   type: conference
   series: "PPoPP'23"
   venue: "Proceedings of the 28th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming"
   location: "Montreal, Canada. Feb 25 - Mar 1"
   dates: "Feb 25 - Mar 1, 2023"
+  acceptance: "23.7% (31/131)"
   links:
     doi: 10.1145/3572848.3577496
 
@@ -553,6 +618,7 @@
   title: "Parallel Vertex Color Update on Large Dynamic Networks"
   authors: [Arindam Khanda, Sanjukta Bhowmick, Xin Liang, Sajal K Das]
   date: 2022-12-18
+  notified: 2022-12-18   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HiPC'22"
   venue: "Proceedings of IEEE 29th International Conference on High Performance Computing, Data, and Analytics, Bengaluru, India"
@@ -564,6 +630,7 @@
   title: "Dynamic Quality Metric Oriented Error Bounded Lossy Compression for Scientific Datasets"
   authors: [Jinyang Liu, Sheng Di, Kai Zhao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2022-11-13
+  notified: 2022-06-28
   type: conference
   series: "SC'22"
   venue: "Proceedings of the 2022 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -577,6 +644,7 @@
   title: "Region-adaptive, Error-controlled Scientific Data Compression using Multilevel Decomposition"
   authors: [Qian Gong, Ben Whitney, Chengzhu Zhang, Xin Liang, Anand Rangarajan, Jieyang Chen, Lipeng Wan, Paul Ullrich, Qing Liu, Robert Jacob, Sanjay Ranka, Scott Klasky]
   date: 2022-07-06
+  notified: 2022-05-28
   type: conference
   series: "SSDBM'22"
   venue: "Proceedings of the 34th International Conference on Scientific and Statistical Database Management"
@@ -590,11 +658,13 @@
   title: "Ultrafast Error-bounded Lossy Compression for Scientific Datasets"
   authors: [Xiaodong Yu, Sheng Di, Kai Zhao, Jiannan Tian, Dingwen Tao, Xin Liang, Franck Cappello]
   date: 2022-06-27
+  notified: 2022-04-28
   type: conference
   series: "HPDC'22"
   venue: "Proceedings of the 31st ACM International Symposium on High-Performance Parallel and Distributed Computing"
   location: "Minneapolis, MN"
   dates: "June 27-July 1, 2022"
+  acceptance: "19.4% (21/108)"
   links:
     doi: 10.1145/3502181.3531473
 
@@ -602,11 +672,13 @@
   title: "MDZ: An Efficient Error-bounded Lossy Compressor for Molecular Dynamics"
   authors: [Kai Zhao, Sheng Di, Danny Perez, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2022-05-09
+  notified: 2021-11-28
   type: conference
   series: "ICDE'22"
   venue: "Proceedings of the 38th IEEE International Conference on Data Engineering"
   location: "Virtual"
   dates: "May 9 - 12, 2022"
+  acceptance: "27.1% (211/780)"
   links:
     doi: 10.1109/icde53745.2022.00007
 
@@ -614,6 +686,7 @@
   title: "Exploring Autoencoder-Based Error-Bounded Compression for Scientific Data"
   authors: [Jinyang Liu, Sheng Di, Kai Zhao, Sian Jin, Dingwen Tao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2021-09-07
+  notified: 2021-08-28
   type: conference
   series: "Cluster'21"
   venue: "Proceedings of the 2021 IEEE International Conference on Cluster Computing"
@@ -627,6 +700,7 @@
   title: "Optimizing Error-Bounded Lossy Compression for Scientific Data on GPUs"
   authors: [Jiannan Tian, Sheng Di, Xiaodong Yu, Cody Rivera, Kai Zhao, Sian Jin, Yunhe Feng, Xin Liang, Dingwen Tao, Franck Cappello]
   date: 2021-09-07
+  notified: 2021-08-28
   type: conference
   series: "Cluster'21"
   venue: "Proceedings of the 2021 IEEE International Conference on Cluster Computing"
@@ -640,6 +714,7 @@
   title: "Resilient Error-bounded Lossy compressor for Data Transfer"
   authors: [Sihuan Li, Sheng Di, Kai Zhao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2021-11-14
+  notified: 2021-06-28
   type: conference
   series: "SC'21"
   venue: "Proceedings of the 2021 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -653,6 +728,7 @@
   title: "Error-controlled, Progressive, and Adaptable Retrieval of Scientific Data with Multilevel Decomposition"
   authors: [Xin Liang, Qian Gong, Jieyang Chen, Ben Whitney, Lipeng Wan, Qing Liu, David Pugmire, Rick Archibald, Norbert Podhorszki, Scott Klasky]
   date: 2021-11-14
+  notified: 2021-06-28
   type: conference
   series: "SC'21"
   venue: "Proceedings of the 2021 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -667,11 +743,13 @@
   title: "Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs"
   authors: [Jieyang Chen, Lipeng Wan, Xin Liang, Ben Whitney, Qing Liu, Dave Pugmire, Nicholas Thompson, Matthew Wolf, Todd Munson, Ian Foster, Scott Klasky]
   date: 2021-05-17
+  notified: 2020-12-28
   type: conference
   series: "IPDPS'21"
   venue: "Proceedings of the 35th IEEE International Parallel and Distributed Symposium"
   location: "Portland, Oregon"
   dates: "May 17-21, 2021"
+  acceptance: "22.7% (105/462)"
   links:
     doi: 10.1109/ipdps49936.2021.00095
 
@@ -679,11 +757,13 @@
   title: "Revisiting Huffman Coding: Toward Extreme Performance on Modern GPU Architectures"
   authors: [Jiannan Tian, Cody Rivera, Sheng Di, Jieyang Chen, Xin Liang, Dingwen Tao, Franck Cappello]
   date: 2021-05-17
+  notified: 2020-12-28
   type: conference
   series: "IPDPS'21"
   venue: "Proceedings of the 35th IEEE International Parallel and Distributed Symposium"
   location: "Portland, Oregon"
   dates: "May 17-21, 2021"
+  acceptance: "22.7% (105/462)"
   links:
     doi: 10.1109/ipdps49936.2021.00097
 
@@ -691,6 +771,7 @@
   title: "Towards End-to-end SDC Detection for HPC Applications Equipped with Lossy Compression"
   authors: [Sihuan Li, Sheng Di, Kai Zhao, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2020-09-01
+  notified: 2020-08-28
   type: conference
   series: "Cluster'20"
   venue: "Proceedings of the 22nd IEEE International Conference on Cluster Computing"
@@ -703,6 +784,7 @@
   title: "cuSZ: An Efficient GPU Based Error-Bounded Lossy Compression Framework for Scientific Data"
   authors: [Jiannan Tian, Sheng Di, Kai Zhao, Cody Rivera, Megan Hickman, Robert Underwood, Sian Jin, Xin Liang, Jon Calhoun, Dingwen Tao, Franck Cappello]
   date: 2020-10-03
+  notified: 2020-07-28
   type: conference
   series: "PACT'20"
   venue: "Proceedings of the 29th International Conference on Parallel Architectures and Compilation Techniques"
@@ -717,6 +799,7 @@
   title: "Significantly Improving Lossy Compression for HPC Datasets with Second- Order Prediction and Parameter Optimization"
   authors: [Kai Zhao, Sheng Di, Xin Liang, Sihuan Li, Dingwen Tao, Zizhong Chen, Franck Cappello]
   date: 2020-06-23
+  notified: 2020-03-28
   type: conference
   series: "HPDC'20"
   venue: "Proceedings of the 29th ACM International Symposium on High-Performance Parallel and Distributed Computing"
@@ -730,6 +813,7 @@
   title: "waveSZ: A Hardware-Algorithm Co-Design of Efficient Lossy Compression for Scientific Data"
   authors: [Jiannan Tian, Sheng Di, Chengming Zhang, Xin Liang, Sian Jin, Dazhao Cheng, Dingwen Tao, Franck Cappello]
   date: 2020-02-22
+  notified: 2020-02-22   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "PPOPP'20"
   venue: "Proceedings of the 25th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming"
@@ -744,6 +828,7 @@
   title: "Towards Feature Preserving 2D and 3D Vector Field Compression"
   authors: [Xin Liang, Hanqi Guo, Sheng Di, Franck Cappello, Mukund Raj, Chunhui Liu, Kenji Ono, Zizhong Chen and Tom Peterka]
   date: 2020-04-14
+  notified: 2020-01-28
   type: conference
   series: "PacificVis'20"
   venue: "Proceedings of the 13rd IEEE Pacific Visualization Symposium"
@@ -758,6 +843,7 @@
   title: "Significantly Improving Lossy Compression Quality based on An Optimized Hybrid Prediction Model"
   authors: [Xin Liang, Sheng Di, Sihuan Li, Dingwen Tao, Bogdan Nicolae, Zizhong Chen, Franck Cappello]
   date: 2019-11-17
+  notified: 2019-11-17   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "SC'19"
   venue: "Proceedings of the 2019 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -772,6 +858,7 @@
   title: "FT-iSort: Efficient Fault Tolerance for Introsort"
   authors: [Sihuan Li, Hongbo Li, Xin Liang, Jieyang Chen, Elisabeth Giem, Kaiming Ouyang, Kai Zhao, Sheng Di, Franck Cappello, Zizhong Chen]
   date: 2019-11-17
+  notified: 2019-11-17   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "SC'19"
   venue: "Proceedings of the 2019 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -786,6 +873,7 @@
   title: "Improving Performance of Data Dumping with Lossy Compression for Scientific Simulation"
   authors: [Xin Liang, Sheng Di, Dingwen Tao, Sihuan Li, Bogdan Nicolae, Zizhong Chen, Franck Cappello]
   date: 2019-09-23
+  notified: 2019-09-23   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "Cluster'19"
   venue: "Proceedings of the 2019 IEEE International Conference on Cluster Computing"
@@ -800,6 +888,7 @@
   title: "TSM2: Optimizing Tall-and-Skinny Matrix-Matrix Multiplication on GPUs"
   authors: [Jieyang Chen, Nan Xiong, Xin Liang, Dingwen Tao, Sihuan Li, Kaiming Ouyang, Kai Zhao, Nathan DeBardeleben, Qiang Guan, Zizhong Chen]
   date: 2019-06-26
+  notified: 2019-06-26   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "ICS'19"
   venue: "Proceedings of the 33rd ACM International Conference on Supercomputing"
@@ -814,6 +903,7 @@
   title: "DeepSZ: A Novel Framework to Compress Deep Neural Networks by Using Error-Bounded Lossy Compression"
   authors: [Sian Jin, Sheng Di, Xin Liang, Jiannan Tian, Dingwen Tao, Franck Cappello]
   date: 2019-06-24
+  notified: 2019-06-24   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HPDC'19"
   venue: "Proceedings of the 28th ACM International Symposium on High-Performance Parallel and Distributed Computing"
@@ -828,6 +918,7 @@
   title: "Error-Controlled Lossy Compression Optimized for High Compression Ratios of Scientific Datasets"
   authors: [Xin Liang, Sheng Di, Dingwen Tao, Sihuan Li, Shaomeng Li, Hanqi Guo, Zizhong Chen, Franck Cappello]
   date: 2018-12-10
+  notified: 2018-12-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "BigData'18"
   venue: "Proceedings of the 2018 IEEE International Conference on Big Data"
@@ -842,6 +933,7 @@
   title: "Optimizing Lossy Compression with Adjacent Snapshots for N-body Simulation Data"
   authors: [Sihuan Li, Sheng Di, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2018-12-10
+  notified: 2018-12-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "BigData'18"
   venue: "Proceedings of  the 2018 IEEE International Conference on Big Data, Seattle, WA, USA"
@@ -854,10 +946,12 @@
   title: "Build and Execution Environment (BEE): an Encapsulated Environment Enabling HPC Applications Running Everywhere"
   authors: [Jieyang Chen, Qiang Guan, Xin Liang, Paul Bryant, Patricia Grubel, Allen Mcpherson, Li-Ta Lo, Timothy Randles, Zizhong Chen, James Ahrens]
   date: 2018-12-10
+  notified: 2018-12-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "BigData'18"
   venue: "Proceedings of  the 2018 IEEE International Conference on Big Data, Seattle, WA, USA"
   dates: "December 10 - 13, 2018"
+  acceptance: "18.9% (98/518)"
   links:
     doi: 10.1109/bigdata.2018.8622572
 
@@ -865,6 +959,7 @@
   title: "An Efficient Transformation Scheme for Lossy Data Compression with Point-wise Relative Error Bound"
   authors: [Xin Liang, Sheng Di, Dingwen Tao, Zizhong Chen, Franck Cappello]
   date: 2018-09-10
+  notified: 2018-09-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "Cluster'18"
   venue: "Proceedings of the 2018 IEEE International Conference on Cluster Computing"
@@ -880,6 +975,7 @@
   title: "PaSTRI: Error-Bounded Lossy Compression for Two-Electron Integrals in Quantum Chemistry"
   authors: [Ali Murat Gok, Sheng Di, Yuri Alexeev, Dingwen Tao, Vladimir Mironov, Xin Liang, Franck Cappello]
   date: 2018-09-10
+  notified: 2018-09-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "Cluster'18"
   venue: "Proceedings of the 2018 IEEE International Conference on Cluster Computing"
@@ -893,6 +989,7 @@
   title: "Fixed-PSNR Lossy Compression for Scientific Data (short paper)"
   authors: [Dingwen Tao, Sheng Di, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2018-09-10
+  notified: 2018-09-10   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "Cluster'18"
   venue: "Proceedings of the 2018 IEEE International Conference on Cluster Computing"
@@ -906,6 +1003,7 @@
   title: "Fault Tolerant One-sided Matrix Decompositions on Heterogeneous Systems with GPUs"
   authors: [Jieyang Chen, Hongbo Li, Sihuan Li, Xin Liang, Panruo Wu, Dingwen Tao, Kaiming Ouyang, Yuanlai Liu, Qiang Guan, Zizhong Chen]
   date: 2018-11-11
+  notified: 2018-11-11   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "SC'18"
   venue: "Proceedings of the 2018 ACM/IEEE International  Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -919,6 +1017,7 @@
   title: "BeeFlow : a Workflow Management System for In situ Processing Across HPC and Cloud Systems"
   authors: [Jieyang Chen, Qiang Guan, Zhao Zhang, Xin Liang, Louis Vernon, Allen Mcpherson, Li-Ta Lo, Zizhong Chen, Patricia Grubel, James Ahrens]
   date: 2018-07-02
+  notified: 2018-07-02   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "ICDCS'18"
   venue: "Proceedings of the 38th IEEE International Conference on Distributed Computing Systems"
@@ -931,6 +1030,7 @@
   title: "Improving Performance of Iterative Methods by Lossy Checkponting"
   authors: [Dingwen Tao, Sheng Di, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2018-06-11
+  notified: 2018-06-11   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HPDC'18"
   venue: "Proceedings of  the 27th ACM International Symposium on High-Performance Parallel and Distributed Computing, Tempe, AZ, USA"
@@ -943,6 +1043,7 @@
   title: "Correcting Soft Errors Online in Fast Fourier Transform"
   authors: [Xin Liang, Jieyang Chen, Dingwen Tao, Sihuan Li, Panruo Wu, Hongbo Li, Kaiming Ouyang, Yuanlai Liu, Fengguang Song, Zizhong Chen]
   date: 2017-11-12
+  notified: 2017-11-12   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "SC'17"
   venue: "Proceedings of the 2017 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -957,11 +1058,13 @@
   title: "Silent Data Corruption Resilient Two-sided Matrix Factorizations"
   authors: [Panruo Wu, Qiang Guan, Nathan DeBardeleben, Sean Blanchard, Jieyang Chen, Dingwen Tao, Xin Liang, Sihuan Li, Kaiming Ouyang, Zizhong Chen]
   date: 2017-02-04
+  notified: 2017-02-04   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "PPoPP'17"
   venue: "Proceedings of the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming"
   location: "Austin, Texas, USA"
   dates: "February 4 - 8 2017"
+  acceptance: "22.0% (29/132)"
   links:
     doi: 10.1145/3155284.3018750
 
@@ -969,6 +1072,7 @@
   title: "GreenLA: Green Linear Algebra Software for GPU-Accelerated Heterogeneous Computing"
   authors: [Jieyang Chen, Li Tan, Panruo Wu, Dingwen Tao, Hongbo Li, Xin Liang, Sihuan Li, Rong Ge, Laxmi Bhuyan, Zizhong Chen]
   date: 2016-11-13
+  notified: 2016-11-13   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "SC'16"
   venue: "Proceedings of the 2016 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -981,11 +1085,13 @@
   title: "Towards Practical Algorithm Based Fault Tolerance in Dense Linear Algebra"
   authors: [Panruo Wu, Nathan DeBardeleben, Qiang Guan, Sean Blanchard, Dingwen Tao, Xin Liang, Jieyang Chen, Zizhong Chen]
   date: 2016-05-31
+  notified: 2016-05-31   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HPDC'16"
   venue: "Proceedings of the 25th ACM International Symposium on High-Performance Parallel and Distributed Computing"
   location: "Kyoto, JAPAN"
   dates: "May 31- June 4, 2016"
+  acceptance: "15.5% (20/129)"
   links:
     doi: 10.1145/2907294.2907315
 
@@ -993,11 +1099,13 @@
   title: "New-Sum: A Novel Online ABFT Scheme For General Iterative Methods"
   authors: [Dingwen Tao, Shuaiwen Leon Song, Sriram Krishnamoorthy, Panruo Wu, Xin Liang, Zheng Eddy Zhang, Darren Kerbyson, Zizhong Chen]
   date: 2016-05-31
+  notified: 2016-05-31   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HPDC'16"
   venue: "Proceedings of the 25th ACM International Symposium on High-Performance Parallel and Distributed Computing"
   location: "Kyoto, JAPAN"
   dates: "May 31- June 4, 2016"
+  acceptance: "15.5% (20/129)"
   links:
     doi: 10.1145/2907294.2907306
 
@@ -1006,6 +1114,7 @@
   title: "Online Algorithm-Based Fault Tolerance for Cholesky Decomposition on Heterogeneous Systems with GPUs"
   authors: [Jieyang Chen, Xin Liang, Zizhong Chen]
   date: 2016-05-23
+  notified: 2016-05-23   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "IPDPS'16"
   venue: "Proceedings of the 30th IEEE International Parallel & Distributed Processing Symposium"
@@ -1019,6 +1128,7 @@
   title: "Simulated Annealing to Generate Numerically Stable Real Number Error Correction Codes"
   authors: [Teresa Davies, Xin Liang, Jieyang Chen, Zizhong Chen]
   date: 2015-08-24
+  notified: 2015-08-24   # no acceptance announcement on record; venue date used for ordering
   type: conference
   series: "HPCC'15"
   venue: "Proceedings of the 2015 IEEE 17th International Conference on High Performance Computing and Communications, 2015 IEEE 7th International Symposium on Cyberspace Safety and Security, and 2015 IEEE 12th International Conf on Embedded Software and Systems"
@@ -1031,6 +1141,7 @@
   title: "Toward Feature-Preserving Vector Field Compression"
   authors: [Xin Liang, Sheng Di, Franck Cappello, Mukund Raj, Chunhui Liu, Kenji Ono, Zizhong Chen, Tom Peterka, Hanqi Guo]
   date: 2022-01-01
+  notified: 2022-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TVCG"
   venue: "IEEE Transactions on Visualization and Computer Graphics"
@@ -1043,6 +1154,7 @@
   title: "SZ3: A Modular Framework for Composing Prediction-based Error-bounded Lossy Compressors"
   authors: [Xin Liang, Kai Zhao, Sheng Di, Sihuan Li, Robert Underwood, Ali M. Gok, Jiannan Tian, Junjing Deng, Jon C. Calhoun, Dingwen Tao, Zizhong Chen, Franck Cappello]
   date: 2022-01-01
+  notified: 2022-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TBD"
   venue: "IEEE Transactions on Big Data"
@@ -1057,6 +1169,7 @@
   title: "Improving I/O Performance for Exascale Applications through Online Data Layout Reorganization"
   authors: [Lipeng Wan, Axel Huebl, Junmin Gu, Franz Poeschel, Ana Gainaru, Ruonan Wang, Jieyang Chen, Xin Liang, Dmitry Ganyushin, Todd Munson, Ian Foster, Jean-Luc Vay, Norbert Podhorszki, Kesheng Wu, Scott Klasky]
   date: 2021-01-01
+  notified: 2021-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TPDS-SS"
   venue: "IEEE Transactions on Parallel and Distributed Systems Special Section on Innovative R&D toward the Exascale Era"
@@ -1067,6 +1180,7 @@
   title: "MGARD+: Optimizing Multilevel Methods for Error-bounded Scientific Data Reduction"
   authors: [Xin Liang, Ben Whitney, Jieyang Chen, Lipeng Wan, Qing Liu, Dingwen Tao, James Kress, David Pugmire, Matthew Wolf, Norbert Podhorszki, Scott Klasky]
   date: 2021-01-01
+  notified: 2021-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TC"
   venue: "To appear in IEEE Transaction on Computers"
@@ -1079,6 +1193,7 @@
   title: "FTK: A Simplicial Spacetime Meshing Framework for Robust and Scalable Feature Tracking"
   authors: [Hanqi Guo, David Lenz, Jiayi Xu, Xin Liang, Wenbin He, Iulian R. Grindeanu, Han-Wei Shen, Tom Peterka, Todd Munson, Ian Foster]
   date: 2021-01-01
+  notified: 2021-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TVCG"
   venue: "IEEE Transactions on Visualization and Computer Graphics"
@@ -1089,6 +1204,7 @@
   title: "Algorithm-Based Fault Tolerance for Convolutional Neural Networks"
   authors: [Kai Zhao, Sheng Di, Sihuan Li, Xin Liang, Yujia Zhai, Jieyang Chen, Kaiming Ouyang, Franck Cappello and Zizhong Chen]
   date: 2020-01-01
+  notified: 2020-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TPDS-SS-AI"
   venue: "IEEE Transactions on Parallel and Distributed Systems Special Section on Parallel and Distributed Computing Techniques for AI, ML and DL"
@@ -1099,6 +1215,7 @@
   title: "Use Cases of Lossy Compression for Floating-Point Data in Scientific Data Sets"
   authors: [Franck Cappello, Sheng Di, Sihuan Li, Xin Liang, Ali Murat Gok, Dingwen Tao, Chun Hong Yoon, Xin-Chuan Wu, Yuri Alexeev, Frederic T Chong]
   date: 2019-01-01
+  notified: 2019-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "IJHPCA"
   venue: "The International Journal of High Performance Computing Applications"
@@ -1109,6 +1226,7 @@
   title: "Optimizing Lossy Compression Rate-Distortion from Automatic Online Selection between SZ and ZFP"
   authors: [Dingwen Tao, Sheng Di, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2019-01-01
+  notified: 2019-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TPDS"
   venue: "IEEE Transactions on Parallel and Distributed Systems"
@@ -1119,6 +1237,7 @@
   title: "Efficient Lossy Compression for Scientific Data based on Pointwise Relative Error Bound"
   authors: [Sheng Di, Dingwen Tao, Xin Liang, Franck Cappello]
   date: 2018-01-01
+  notified: 2018-01-01   # no acceptance announcement on record; venue date used for ordering
   type: journal
   series: "TPDS"
   venue: "IEEE Transactions on Parallel and Distributed Systems"

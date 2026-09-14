@@ -23,6 +23,6 @@ exclude:
 #   - jekyll-sitemap
 news_on_home: 22
 
-# Home page "Selected Recent Paper" shows selected publications from this year
+# Home page "Selected Publications" shows selected publications from this year
 # onward. Set to 2024 to include 2024 papers as well.
 selected_since: 2024

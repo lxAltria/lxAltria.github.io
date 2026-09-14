@@ -19,7 +19,7 @@ description: "Funded projects and the full publication list of Xin Liang: error-
       <div><hr></div>
       <div class="starter-template">
         <h2><a id="publication"></a>Publications <small class="text-muted" style="font-size:.5em">(my students are underlined)</small></h2>
-        {%- assign pubs = site.data.publications | sort: "date" | reverse -%}
+        {%- assign pubs = site.data.publications | sort: "notified" | reverse -%}
         {%- for t in site.data.publication_types -%}
           {%- assign group = pubs | where: "type", t.key -%}
           {%- if group.size > 0 %}
