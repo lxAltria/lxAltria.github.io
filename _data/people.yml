@@ -51,7 +51,8 @@
   status: current
   advisor: xin
   since: 2026
-  # photo and bio pending
+  photo: "/img/Shitao.jpg"
+  bio: "Ms. Shitao You received her bachelor’s degrees in Industrial Engineering and Computer Science from the University of Pittsburgh, and her master’s degree in Data Science from UCLA. Before joining Polaris Lab, she worked for two years as a Software Engineer in the infrastructure and cloud computing group at Meituan. Shitao joined Polaris Lab in Fall 2026. Her research interests include scientific data compression and AI for HPC systems. Contact her at <a href=\"mailto:yoush@oregonstate.edu\">yoush@oregonstate.edu</a>."
 
 - name: "Linze Li"
   role: phd
