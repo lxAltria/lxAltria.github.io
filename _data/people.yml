@@ -43,7 +43,7 @@
   advisor: xin
   since: 2024
   url: "https://scholar.google.com/citations?user=SVYA5dsAAAAJ&hl=en"
-  photo: "/img/wenbo.JPEG"
+  photo: "/img/wenbo.jpg"
   bio: "Mr. Wenbo Li received his bachelor’s degree in Bioinformatics from Huazhong University of Science and Technology in 2024. Wenbo joined Polaris lab in Fall 2024. Previously, he worked on proteomics and protein language models for the prediction of post-translation modifications. His research interests include high-performance computing, GPU computing, and scientific data compression. Contact him at <a href=\"mailto:liwenb@oregonstate.edu\">liwenb@oregonstate.edu</a>."
 
 - name: "Shitao You"
@@ -58,7 +58,8 @@
   status: current
   advisor: xin
   since: 2026
-  # photo and bio pending
+  photo: "/img/Linze.jpg"
+  bio: "Mr. Linze Li received his bachelor's degree in electronic information science and technology from Jilin University in 2023 and his master's degree in software engineering from the University of Chinese Academy of Sciences in 2026. Linze joined Polaris Lab in Fall 2026. Previously, he worked on hardware/software co-design. His research interests include high-performance computing and scientific data compression. Contact him at <a href=\"mailto:lilinz@oregonstate.edu\">lilinz@oregonstate.edu</a>."
 
 - name: "Pu Jiao"
   role: phd
