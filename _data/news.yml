@@ -12,11 +12,15 @@
 #          correct by hand as needed. Lets one file drive several views.
 # ---------------------------------------------------------------------------
 
-- date: 2026-09-28
+- date: 2026-09-22
+  tags: [award]
+  text: "Our paper EXaCTz has been selected as the <b>Best Paper Award</b> in VIS'26. Congratulations to the team!"
+
+- date: 2026-09-09
   tags: [award]
   text: "Xuan has received the <b>ACM-IEEE CS George Michael Memorial HPC Fellowships</b> that honors exceptional graduate students (up to three awardees and one honorable mention worldwide) in high performance computing, networking, storage, and large-scale data analysis. This is great achievement and shows recognition from the community. Big congratulations to Xuan! [<a href=\"https://awards.acm.org/hpc-fellows\">Announcement</a>]"
 
-- date: 2026-09-27
+- date: 2026-09-01
   tags: [award, joining]
   text: "Shitao and Linze joined our team as PhD students. Both of them have received the <b>OSU College of Engineering scholarship</b> ($10K for one year). Congratulations and welcome, Shitao and Linze!"
 
