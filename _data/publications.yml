@@ -1148,6 +1148,17 @@
   links:
     doi: 10.1109/hpcc-css-icess.2015.238
 
+- id: tvcg26-preserving-discrete-morse
+  title: "Preserving Discrete Morse–Smale Complexes in Error-Bounded Lossy Compression"
+  authors: [Yuxiao Li, Mingze Xia, Xin Liang, Bei Wang, Hanqi Guo]
+  date: 2026-07-01
+  notified: 2026-04-26
+  type: journal
+  series: "TVCG"
+  venue: "IEEE Transactions on Visualization and Computer Graphics"
+  links:
+    doi: 10.1109/tvcg.2026.3684385
+
 - id: tvcg-feature-preserving-vector
   title: "Toward Feature-Preserving Vector Field Compression"
   authors: [Xin Liang, Sheng Di, Franck Cappello, Mukund Raj, Chunhui Liu, Kenji Ono, Zizhong Chen, Tom Peterka, Hanqi Guo]

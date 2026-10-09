@@ -81,9 +81,12 @@ description: "Xin Liang is an Associate Professor in the School of Electrical En
         <div><hr></div>
         <p><i>My students are underlined.</i></p>
         {%- assign pubs = site.data.publications | sort: "notified" | reverse -%}
+        {%- comment -%}Rolling window: the current year and the two before it,
+        recomputed at every build so it never goes stale.{%- endcomment -%}
+        {%- assign cutoff = 'now' | date: "%Y" | plus: 0 | minus: site.selected_years | plus: 1 -%}
         {%- for p in pubs %}
           {%- assign yr = p.date | date: "%Y" | plus: 0 -%}
-          {%- if p.selected and yr >= site.selected_since %}{% include publication.html pub=p %}{% endif -%}
+          {%- if p.selected and yr >= cutoff %}{% include publication.html pub=p %}{% endif -%}
         {%- endfor %}
       </div>
 

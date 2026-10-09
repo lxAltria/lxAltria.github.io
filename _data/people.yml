@@ -63,6 +63,7 @@
   bio: "Mr. Linze Li received his bachelor's degree in electronic information science and technology from Jilin University in 2023 and his master's degree in software engineering from the University of Chinese Academy of Sciences in 2026. Linze joined Polaris Lab in Fall 2026. Previously, he worked on hardware/software co-design. His research interests include high-performance computing and scientific data compression. Contact him at <a href=\"mailto:lilinz@oregonstate.edu\">lilinz@oregonstate.edu</a>."
 
 - name: "Pu Jiao"
+  url: https://jpcoding.github.io/
   role: phd
   status: alumnus
   advisor: xin
@@ -73,6 +74,7 @@
   bio: "Mr. Pu Jiao earned a master’s degree from the Institute of Engineering Mechanics of China Earthquake Administration in 2019 and a bachelor’s degree from Xi’an Jiaotong University in 2016. Pu joined Polaris Lab in Spring 2022, and he is currently working on improving the compression quality of scientific lossy data compressors. His research interest includes high-performance computing and data mining. Contact him at <a href=\"mailto:pujiao@uky.edu\">pujiao@uky.edu</a>."
 
 - name: "Jiannan Tian"
+  url: https://jti.one/
   role: postdoc
   status: alumnus
   advisor: xin

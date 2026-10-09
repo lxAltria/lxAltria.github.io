@@ -23,6 +23,7 @@ exclude:
 #   - jekyll-sitemap
 news_on_home: 22
 
-# Home page "Selected Publications" shows selected publications from this year
-# onward. Set to 2024 to include 2024 papers as well.
-selected_since: 2024
+# Home page "Selected Publications" shows papers the group LED (a student or Xin
+# as first or co-first author, flagged `selected: true` in _data/publications.yml)
+# from the last N years. The cutoff is computed at build time, so it rolls.
+selected_years: 3

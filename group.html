@@ -44,7 +44,7 @@ description: "The Polaris Laboratory at Oregon State University develops high-pe
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
-            <p align="left">{{ m.name }} ({% case m.role %}{% when "postdoc" %}PostDoc{% when "phd" %}PhD{% when "ms" %}MS{% else %}{{ m.role }}{% endcase %}, {{ m.since }}-{{ m.until }}{% if m.next %}, now {{ m.next }}{% endif %})</p>
+            <p align="left">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %} ({% case m.role %}{% when "postdoc" %}PostDoc{% when "phd" %}PhD{% when "ms" %}MS{% else %}{{ m.role }}{% endcase %}, {{ m.since }}-{{ m.until }}{% if m.next %}, now {{ m.next }}{% endif %})</p>
           </div>
           <div class="col-md-2"></div>
         </div>
