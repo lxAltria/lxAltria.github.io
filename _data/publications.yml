@@ -1037,7 +1037,7 @@
     doi: 10.1109/icdcs.2018.00103
 
 - id: hpdc18-improving-performance-iterative
-  title: "Improving Performance of Iterative Methods by Lossy Checkponting"
+  title: "Improving Performance of Iterative Methods by Lossy Checkpointing"
   authors: [Dingwen Tao, Sheng Di, Xin Liang, Zizhong Chen, Franck Cappello]
   date: 2018-06-11
   notified: 2018-04-11   # no acceptance announcement on record; venue date less two months
@@ -1148,6 +1148,17 @@
   links:
     doi: 10.1109/hpcc-css-icess.2015.238
 
+- id: csur25-survey-error-bounded
+  title: "A Survey on Error-Bounded Lossy Compression for Scientific Datasets"
+  authors: [Sheng Di, Jinyang Liu, Kai Zhao, Xin Liang, Robert Underwood, Zhaorui Zhang, Milan Shah, Yafan Huang, Jiajun Huang, Xiaodong Yu, Congrong Ren, Hanqi Guo, Grant Wilkins, Dingwen Tao, Jiannan Tian, Sian Jin, Zizhe Jian, Daoce Wang, Md Hasanur Rahman, Boyuan Zhang, Shihui Song, Jon Calhoun, Guanpeng Li, Kazutomo Yoshii, Khalid Alharthi, Franck Cappello]
+  date: 2025-06-11
+  notified: 2025-04-11   # no acceptance announcement on record; venue date less two months
+  type: journal
+  series: "CSUR"
+  venue: "ACM Computing Surveys"
+  links:
+    doi: 10.1145/3733104
+
 - id: tvcg26-preserving-discrete-morse
   title: "Preserving Discrete Morse–Smale Complexes in Error-Bounded Lossy Compression"
   authors: [Yuxiao Li, Mingze Xia, Xin Liang, Bei Wang, Hanqi Guo]
@@ -1158,6 +1169,17 @@
   venue: "IEEE Transactions on Visualization and Computer Graphics"
   links:
     doi: 10.1109/tvcg.2026.3684385
+
+- id: softwarex23-mgard-multigrid-framework
+  title: "MGARD: A multigrid framework for high-performance, error-controlled data compression and refactoring"
+  authors: [Qian Gong, Jieyang Chen, Ben Whitney, Xin Liang, Viktor Reshniak, Tania Banerjee, Jaemoon Lee, Anand Rangarajan, Lipeng Wan, Nicolas Vidal, Qing Liu, Ana Gainaru, Norbert Podhorszki, Richard Archibald, Sanjay Ranka, Scott Klasky]
+  date: 2023-12-01
+  notified: 2023-10-01   # no acceptance announcement on record; venue date less two months
+  type: journal
+  series: "SoftwareX"
+  venue: "Elsevier SoftwareX"
+  links:
+    doi: 10.1016/j.softx.2023.101590
 
 - id: tvcg-feature-preserving-vector
   title: "Toward Feature-Preserving Vector Field Compression"
@@ -1205,7 +1227,7 @@
   notified: 2020-11-01   # no acceptance announcement on record; venue date less two months
   type: journal
   series: "TC"
-  venue: "To appear in IEEE Transaction on Computers"
+  venue: "IEEE Transactions on Computers"
   co_first: [Xin Liang, Ben Whitney]
   selected: true
   links:

@@ -55,9 +55,6 @@
     - name: International Conference on Scientific and Statistical Database Management
       short: SSDBM
       years: [2024, 2023, 2022]
-    - name: International Workshop on Data Reduction for Big Scientific Data
-      short: DRBSD
-      years: [2023]
     - name: International Conference on Parallel Processing
       short: ICPP
       years: [2023]
