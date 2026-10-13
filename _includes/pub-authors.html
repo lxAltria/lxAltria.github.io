@@ -1,12 +1,14 @@
 {%- comment -%}
 Renders one publication's author list.
   - you are bolded
-  - anyone in _data/people.yml with advisor: xin is underlined
+  - a group member is underlined only on papers from their `since` year onward
+    (Jiannan Tian co-authored 9 papers before joining in 2024)
   - co-first (+) and corresponding (*) markers are placed automatically
 Usage: {% include pub-authors.html pub=some_publication %}
 {%- endcomment -%}
 {%- assign my_students = site.data.people | where: "advisor", "xin" -%}
 {%- assign student_names = my_students | map: "name" -%}
+{%- assign pub_year = include.pub.date | date: "%Y" | plus: 0 -%}
 {%- assign n = include.pub.authors | size -%}
 {%- for a in include.pub.authors -%}
   {%- if forloop.first -%}
@@ -18,8 +20,11 @@ Usage: {% include pub-authors.html pub=some_publication %}
   {%- if a == "Xin Liang" -%}
     <b>{{ a }}</b>
   {%- elsif student_names contains a -%}
-    {%- comment -%}Underline only -- student links live on the Group page.{%- endcomment -%}
-    <u>{{ a }}</u>
+    {%- comment -%}Underline only -- student links live on the Group page. Underline
+    only from the year they joined: co-authorship predating the group is not mine.
+    {%- endcomment -%}
+    {%- assign who = my_students | where: "name", a | first -%}
+    {%- if who.since and pub_year < who.since -%}{{- a -}}{%- else -%}<u>{{ a }}</u>{%- endif -%}
   {%- else -%}
     {{- a -}}
   {%- endif -%}
